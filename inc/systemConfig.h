@@ -1,0 +1,17 @@
+#pragma config POSCMOD = NONE
+#pragma config I2C1SEL = PRI
+#pragma config IOL1WAY = ON
+#pragma config OSCIOFNC = ON
+#pragma config FCKSM = CSDCMD
+#pragma config FNOSC = FRCPLL
+#pragma config SOSCSEL = SOSC
+#pragma config WUTSEL = LEG
+#pragma config IESO = OFF
+#pragma config WDTPS = PS16384
+#pragma config FWPSA = PR128
+#pragma config WINDIS = OFF
+#pragma config FWDTEN = OFF
+#pragma config ICS = PGx1
+#pragma config GWRP = OFF
+#pragma config GCP = OFF
+#pragma config JTAGEN = OFF
