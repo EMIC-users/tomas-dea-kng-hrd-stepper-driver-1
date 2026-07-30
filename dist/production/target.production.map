@@ -101,6 +101,8 @@ Archive member included because of file (symbol)
                               /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/streamIn.o (_memset)
 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(snprintf.XX_o)
                               /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/streamIn.o (_snprintf)
+/opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strncmp.XX_o)
+                              /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/userFncFile.o (_strncmp)
 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtod.XX_o)
                               /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(atof.XX_o) (_strtod)
 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(vsnprintf.XX_o)
@@ -241,13 +243,13 @@ Default Scalar Model: Small
 
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
-.text                        0x200              0x43e2          0x65d3  (26067)
-.const                      0x45e2                0x66            0x99  (153)
-.text                       0x4648               0xeb2          0x160b  (5643)
-.dinit                      0x54fa                0xe8           0x15c  (348)
-.text                       0x55e2               0x1ee           0x2e5  (741)
+.text                        0x200              0x440c          0x6612  (26130)
+.const                      0x460c                0x60            0x90  (144)
+.text                       0x466c               0xfe2          0x17d3  (6099)
+.dinit                      0x564e                0xe8           0x15c  (348)
+.text                       0x5736               0x12c           0x1c2  (450)
 
-                 Total "program" memory used (bytes):         0x80b8  (32952) 50%
+                 Total "program" memory used (bytes):         0x8193  (33171) 50%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -337,298 +339,300 @@ External Symbols in Program Memory (by address):
                   0x000a84                  _atoll
                   0x000ae8                  _memset
                   0x000bb0                  _snprintf
-                  0x000c14                  _strtof
-                  0x000c1a                  _strtod
-                  0x000c20                  _strtold
-                  0x000c24                  _vsnprintf
-                  0x001c2e                  ___floatscan
-                  0x001e5a                  ___shlim
-                  0x001ea4                  ___shgetc
-                  0x001fd4                  _vfprintf
-                  0x001ff0                  ___pop_float
-                  0x00202e                  ___pop_int
-                  0x0020d6                  ___pop_ptr
-                  0x00216c                  ___pad
-                  0x0021e6                  ___fmt_state
-                  0x0024ea                  ___printf_core
-                  0x00252a                  ___uflow
-                  0x002554                  _memcpy
-                  0x002562                  _strlen
-                  0x002592                  _tolower
-                  0x00259e                  ___tolower_l
-                  0x0025a2                  ___fmt_a
-                  0x002ae6                  ___fmt_d
-                  0x002b9a                  ___fmt_fp
-                  0x003150                  ___fmt_o
-                  0x0031ba                  ___fmt_s
-                  0x00320e                  ___cvt_u
-                  0x0032b4                  ___fmt_u
-                  0x003306                  ___fmt_x
-                  0x003450                  ___toread
-                  0x003498                  ___toread_needs_stdio_exit
-                  0x00349a                  _strcpy
-                  0x0034a8                  _toupper
-                  0x0034b4                  ___toupper_l
-                  0x0034ba                  ___stdio_exit
-                  0x0034ce                  ___stpcpy
-                  0x00350e                  ___ledf2
-                  0x00350e                  ___eqdf2
-                  0x00350e                  ___ltdf2
-                  0x003518                  ___gedf2
-                  0x003518                  ___gtdf2
-                  0x003522                  ___divsi3
-                  0x003540                  ___nedf2
-                  0x00354a                  ___extendsfdf2
-                  0x003588                  ___fixdfsi
-                  0x0035e0                  ___floatsidf
-                  0x0035e6                  ___floatsisf
-                  0x0035ec                  ___floatunsidf
-                  0x0035f0                  ___truncdfsf2
-                  0x003646                  ___udivsi3
-                  0x003666                  ___umodsi3
-                  0x00366c                  ___mulp32eds3
-                  0x00366c                  ___mulp32peds3
-                  0x00366c                  ___mulsi3
-                  0x003678                  ___subdf3
-                  0x003684                  ___adddf3
-                  0x00371a                  ___divdf3
-                  0x003878                  ___muldf3
-                  0x0039ac                  __dxchg
-                  0x0039ba                  __drshft
-                  0x003a14                  __dupchk
-                  0x003a76                  __drndex
-                  0x003a80                  __dnsrnd
-                  0x003aac                  __dpakex
-                  0x003aba                  ___mulsf3
-                  0x003aba                  ___mulsf3x
-                  0x003bc6                  __unpackdnrmf
-                  0x003c70                  ___udivmoddi3
-                  0x003d56                  ___udivdi3
-                  0x003d64                  ___umoddi3
-                  0x003d6c                  ___divdi3
-                  0x003dcc                  ___moddi3
-                  0x003e28                  ___muldi3
-                  0x003e7a                  __dcompare
-                  0x003ecc                  __dtype
-                  0x003ef0                  __dunpack
-                  0x003f3e                  __dunpack2
-                  0x003f60                  __dreturnNaN
-                  0x003f66                  __dunpack2exit
-                  0x003f70                  ___floatdidf
-                  0x003f90                  ___floatdisf
-                  0x003fb0                  ___floatundidf
-                  0x004006                  ___umuldi3
-                  0x00404a                  __dpack
-                  0x0040a2                  __dPropagateNaN
-                  0x0040be                  _copysignl
-                  0x0040f2                  _fabsl
-                  0x004108                  _floorl
-                  0x004202                  _fmodl
-                  0x00452e                  _scalbnf
-                  0x004582                  _scalbnl
-                  0x004640                  _streamIn_I2C
-                  0x004644                  _streamOut_I2C
-                  0x004648                  _streamIn_t_ptr_to_float
-                  0x004684                  _streamIn_t_ptr_to_char
-                  0x0046be                  _streamIn_t_ptr_to_uint8_t
-                  0x0046fc                  _streamIn_t_ptr_to_uint16_t
-                  0x004738                  _streamIn_t_ptr_to_uint32_t
-                  0x004774                  _streamIn_t_ptr_to_uint64_t
-                  0x0047b0                  _streamIn_t_ptr_to_int8_t
-                  0x0047ee                  _streamIn_t_ptr_to_int16_t
-                  0x00482a                  _streamIn_t_ptr_to_int32_t
-                  0x004866                  _streamIn_t_ptr_to_int64_t
-                  0x0048a2                  _streamIn_t_ptr_to_ascii
-                  0x0048e2                  _sendDataToStream
-                  0x004bfe                  _Init_I2C_Driver
-                  0x004c0a                  _getAvailable_out_count
-                  0x004c1e                  _countI2cStreamIn
-                  0x004c26                  _getI2cStreamIn
-                  0x004c2e                  _setI2cStreamOut
-                  0x004c3a                  _I2C_Begin_Transmision
-                  0x004c54                  _ini_I2C_IN
-                  0x004c7e                  _ini_I2C_OUT
-                  0x004ca8                  _ini_I2C_OUT_FM
-                  0x004cb2                  _reset_I2C_FRAME
-                  0x004cc0                  _push_I2C_IN
-                  0x004cf8                  _push_I2C_OUT
-                  0x004d28                  _pop_I2C_IN
-                  0x004d4c                  _pop_I2C_OUT
-                  0x004d70                  _pop_I2C_OUT_FM
-                  0x004d80                  _i2cCloseWriteFrame
-                  0x004dc2                  _i2cOpenReadFrame
-                  0x004e0e                  _I2c_driver_callback_slave
-                  0x004e4e                  _I2c_driver_callback_master
-                  0x004ebe                  _StepperDriver_Motor_init
-                  0x004ee8                  _StepperDriver_Motor_setMicrostep
-                  0x004f38                  _StepperDriver_Motor_setSpeed
-                  0x004f7a                  _StepperDriver_Motor_move
-                  0x004fc4                  _StepperDriver_Motor_sleep
-                  0x004ff8                  _StepperDriver_Motor_goHome
-                  0x00502a                  _StepperDriver_Motor_goTo
-                  0x00508a                  _StepperDriver_Motor_poll
-                  0x005164                  _streamPushCtr
-                  0x0051b2                  _streamPush
-                  0x0051ec                  _streamPop
-                  0x005224                  _streamOpenWriteFrame
-                  0x005266                  _streamOpenReadFrame
-                  0x0052b2                  _streamReOpenReadFrame
-                  0x0052ca                  _streamCloseReadFrame
-                  0x0052f4                  _Init_Master_I2C2
-                  0x00535c                  _CollisionReset_I2C2
-                  0x005364                  _OverflowReset_I2C2
-                  0x00536c                  _IsStartI2c2
-                  0x005378                  _IsCollisionDetectI2c2
-                  0x005384                  _IsStopI2c2
-                  0x005390                  _IsReceiveBufferFullI2c2
-                  0x00539c                  _IsDataOrAddressI2c2
-                  0x0053a8                  _IsReceiveOverflowI2c2
-                  0x0053b4                  _Start_I2C2
-                  0x0053c6                  _Stop_I2C2
-                  0x0053d8                  _Write_I2C2
-                  0x0053e4                  _Read_I2C2
-                  0x0053f8                  _pI2C
-                  0x005414                  _pI2C_ctrl
-                  0x005430                  _pI2C_boot
-                  0x005450                  _EMICBus_init
-                  0x00545e                  _poll_EMICBus
-                  0x0055e2                  _onReset
-                  0x0055fc                  _etOut1
-                  0x005692                  _StepperDriver_Motor_onLimitSwitch
-                  0x0056a4                  _setTime1
-                  0x0056c0                  _timer1_Poll
-                  0x0056fe                  _LEDs_Led1_init
-                  0x005706                  _LEDs_Led1_state
-                  0x005736                  _LEDs_Led2_init
-                  0x00573e                  _LEDs_Led2_state
-                  0x00576e                  _getSystemMilis
-                  0x005778                  _callback
-                  0x00578a                  _systemTimeInit
-                  0x005794                  _initSystem
-                  0x0057a2                  _main
-                  0x0057ba                  _timer4_init
+                  0x000bbc                  _strncmp
+                  0x000c3e                  _strtof
+                  0x000c44                  _strtod
+                  0x000c4a                  _strtold
+                  0x000c4e                  _vsnprintf
+                  0x001c58                  ___floatscan
+                  0x001e84                  ___shlim
+                  0x001ece                  ___shgetc
+                  0x001ffe                  _vfprintf
+                  0x00201a                  ___pop_float
+                  0x002058                  ___pop_int
+                  0x002100                  ___pop_ptr
+                  0x002196                  ___pad
+                  0x002210                  ___fmt_state
+                  0x002514                  ___printf_core
+                  0x002554                  ___uflow
+                  0x00257e                  _memcpy
+                  0x00258c                  _strlen
+                  0x0025bc                  _tolower
+                  0x0025c8                  ___tolower_l
+                  0x0025cc                  ___fmt_a
+                  0x002b10                  ___fmt_d
+                  0x002bc4                  ___fmt_fp
+                  0x00317a                  ___fmt_o
+                  0x0031e4                  ___fmt_s
+                  0x003238                  ___cvt_u
+                  0x0032de                  ___fmt_u
+                  0x003330                  ___fmt_x
+                  0x00347a                  ___toread
+                  0x0034c2                  ___toread_needs_stdio_exit
+                  0x0034c4                  _strcpy
+                  0x0034d2                  _toupper
+                  0x0034de                  ___toupper_l
+                  0x0034e4                  ___stdio_exit
+                  0x0034f8                  ___stpcpy
+                  0x003538                  ___ledf2
+                  0x003538                  ___eqdf2
+                  0x003538                  ___ltdf2
+                  0x003542                  ___gedf2
+                  0x003542                  ___gtdf2
+                  0x00354c                  ___divsi3
+                  0x00356a                  ___nedf2
+                  0x003574                  ___extendsfdf2
+                  0x0035b2                  ___fixdfsi
+                  0x00360a                  ___floatsidf
+                  0x003610                  ___floatsisf
+                  0x003616                  ___floatunsidf
+                  0x00361a                  ___truncdfsf2
+                  0x003670                  ___udivsi3
+                  0x003690                  ___umodsi3
+                  0x003696                  ___mulp32eds3
+                  0x003696                  ___mulp32peds3
+                  0x003696                  ___mulsi3
+                  0x0036a2                  ___subdf3
+                  0x0036ae                  ___adddf3
+                  0x003744                  ___divdf3
+                  0x0038a2                  ___muldf3
+                  0x0039d6                  __dxchg
+                  0x0039e4                  __drshft
+                  0x003a3e                  __dupchk
+                  0x003aa0                  __drndex
+                  0x003aaa                  __dnsrnd
+                  0x003ad6                  __dpakex
+                  0x003ae4                  ___mulsf3
+                  0x003ae4                  ___mulsf3x
+                  0x003bf0                  __unpackdnrmf
+                  0x003c9a                  ___udivmoddi3
+                  0x003d80                  ___udivdi3
+                  0x003d8e                  ___umoddi3
+                  0x003d96                  ___divdi3
+                  0x003df6                  ___moddi3
+                  0x003e52                  ___muldi3
+                  0x003ea4                  __dcompare
+                  0x003ef6                  __dtype
+                  0x003f1a                  __dunpack
+                  0x003f68                  __dunpack2
+                  0x003f8a                  __dreturnNaN
+                  0x003f90                  __dunpack2exit
+                  0x003f9a                  ___floatdidf
+                  0x003fba                  ___floatdisf
+                  0x003fda                  ___floatundidf
+                  0x004030                  ___umuldi3
+                  0x004074                  __dpack
+                  0x0040cc                  __dPropagateNaN
+                  0x0040e8                  _copysignl
+                  0x00411c                  _fabsl
+                  0x004132                  _floorl
+                  0x00422c                  _fmodl
+                  0x004558                  _scalbnf
+                  0x0045ac                  _scalbnl
+                  0x004664                  _streamIn_I2C
+                  0x004668                  _streamOut_I2C
+                  0x00466c                  _streamIn_t_ptr_to_float
+                  0x0046a8                  _streamIn_t_ptr_to_char
+                  0x0046e2                  _streamIn_t_ptr_to_uint8_t
+                  0x004720                  _streamIn_t_ptr_to_uint16_t
+                  0x00475c                  _streamIn_t_ptr_to_uint32_t
+                  0x004798                  _streamIn_t_ptr_to_uint64_t
+                  0x0047d4                  _streamIn_t_ptr_to_int8_t
+                  0x004812                  _streamIn_t_ptr_to_int16_t
+                  0x00484e                  _streamIn_t_ptr_to_int32_t
+                  0x00488a                  _streamIn_t_ptr_to_int64_t
+                  0x0048c6                  _streamIn_t_ptr_to_ascii
+                  0x004906                  _sendDataToStream
+                  0x004c22                  _Init_I2C_Driver
+                  0x004c2e                  _getAvailable_out_count
+                  0x004c42                  _countI2cStreamIn
+                  0x004c4a                  _getI2cStreamIn
+                  0x004c52                  _setI2cStreamOut
+                  0x004c5e                  _I2C_Begin_Transmision
+                  0x004c78                  _ini_I2C_IN
+                  0x004ca2                  _ini_I2C_OUT
+                  0x004ccc                  _ini_I2C_OUT_FM
+                  0x004cd6                  _reset_I2C_FRAME
+                  0x004ce4                  _push_I2C_IN
+                  0x004d1c                  _push_I2C_OUT
+                  0x004d4c                  _pop_I2C_IN
+                  0x004d70                  _pop_I2C_OUT
+                  0x004d94                  _pop_I2C_OUT_FM
+                  0x004da4                  _i2cCloseWriteFrame
+                  0x004de6                  _i2cOpenReadFrame
+                  0x004e32                  _I2c_driver_callback_slave
+                  0x004e72                  _I2c_driver_callback_master
+                  0x004ee2                  _StepperDriver_Motor_init
+                  0x004f0c                  _StepperDriver_Motor_setMicrostep
+                  0x004f5c                  _StepperDriver_Motor_setSpeed
+                  0x004f9e                  _StepperDriver_Motor_move
+                  0x004fe8                  _StepperDriver_Motor_sleep
+                  0x00501c                  _StepperDriver_Motor_goHome
+                  0x00504e                  _StepperDriver_Motor_goTo
+                  0x0050ae                  _StepperDriver_Motor_poll
+                  0x005188                  _streamPushCtr
+                  0x0051d6                  _streamPush
+                  0x005210                  _streamPop
+                  0x005248                  _streamOpenWriteFrame
+                  0x00528a                  _streamOpenReadFrame
+                  0x0052d6                  _streamReOpenReadFrame
+                  0x0052ee                  _streamCloseReadFrame
+                  0x005318                  _pI2C
+                  0x005334                  _pI2C_ctrl
+                  0x005350                  _pI2C_boot
+                  0x005370                  _EMICBus_init
+                  0x00537e                  _poll_EMICBus
+                  0x005462                  _Init_Master_I2C2
+                  0x0054ca                  _CollisionReset_I2C2
+                  0x0054d2                  _OverflowReset_I2C2
+                  0x0054da                  _IsStartI2c2
+                  0x0054e6                  _IsCollisionDetectI2c2
+                  0x0054f2                  _IsStopI2c2
+                  0x0054fe                  _IsReceiveBufferFullI2c2
+                  0x00550a                  _IsDataOrAddressI2c2
+                  0x005516                  _IsReceiveOverflowI2c2
+                  0x005522                  _Start_I2C2
+                  0x005534                  _Stop_I2C2
+                  0x005546                  _Write_I2C2
+                  0x005552                  _Read_I2C2
+                  0x005566                  _onReset
+                  0x005580                  _etOut1
+                  0x00559a                  _StepperDriver_Motor_onLimitSwitch
+                  0x0055ac                  _eI2C
+                  0x005736                  _setTime1
+                  0x005752                  _timer1_Poll
+                  0x005790                  _LEDs_Led1_init
+                  0x005798                  _LEDs_Led1_state
+                  0x0057c8                  _LEDs_Led2_init
+                  0x0057d0                  _LEDs_Led2_state
+                  0x005800                  _getSystemMilis
+                  0x00580a                  _callback
+                  0x00581c                  _systemTimeInit
+                  0x005826                  _initSystem
+                  0x005834                  _main
+                  0x00584c                  _timer4_init
 
 External Symbols in Program Memory (by name):
 
-                  0x00535c                  _CollisionReset_I2C2
-                  0x005450                  _EMICBus_init
-                  0x004c3a                  _I2C_Begin_Transmision
-                  0x004e4e                  _I2c_driver_callback_master
-                  0x004e0e                  _I2c_driver_callback_slave
-                  0x004bfe                  _Init_I2C_Driver
-                  0x0052f4                  _Init_Master_I2C2
-                  0x005378                  _IsCollisionDetectI2c2
-                  0x00539c                  _IsDataOrAddressI2c2
-                  0x005390                  _IsReceiveBufferFullI2c2
-                  0x0053a8                  _IsReceiveOverflowI2c2
-                  0x00536c                  _IsStartI2c2
-                  0x005384                  _IsStopI2c2
-                  0x0056fe                  _LEDs_Led1_init
-                  0x005706                  _LEDs_Led1_state
-                  0x005736                  _LEDs_Led2_init
-                  0x00573e                  _LEDs_Led2_state
-                  0x005364                  _OverflowReset_I2C2
-                  0x0053e4                  _Read_I2C2
-                  0x0053b4                  _Start_I2C2
-                  0x004ff8                  _StepperDriver_Motor_goHome
-                  0x00502a                  _StepperDriver_Motor_goTo
-                  0x004ebe                  _StepperDriver_Motor_init
-                  0x004f7a                  _StepperDriver_Motor_move
-                  0x005692                  _StepperDriver_Motor_onLimitSwitch
-                  0x00508a                  _StepperDriver_Motor_poll
-                  0x004ee8                  _StepperDriver_Motor_setMicrostep
-                  0x004f38                  _StepperDriver_Motor_setSpeed
-                  0x004fc4                  _StepperDriver_Motor_sleep
-                  0x0053c6                  _Stop_I2C2
-                  0x0053d8                  _Write_I2C2
+                  0x0054ca                  _CollisionReset_I2C2
+                  0x005370                  _EMICBus_init
+                  0x004c5e                  _I2C_Begin_Transmision
+                  0x004e72                  _I2c_driver_callback_master
+                  0x004e32                  _I2c_driver_callback_slave
+                  0x004c22                  _Init_I2C_Driver
+                  0x005462                  _Init_Master_I2C2
+                  0x0054e6                  _IsCollisionDetectI2c2
+                  0x00550a                  _IsDataOrAddressI2c2
+                  0x0054fe                  _IsReceiveBufferFullI2c2
+                  0x005516                  _IsReceiveOverflowI2c2
+                  0x0054da                  _IsStartI2c2
+                  0x0054f2                  _IsStopI2c2
+                  0x005790                  _LEDs_Led1_init
+                  0x005798                  _LEDs_Led1_state
+                  0x0057c8                  _LEDs_Led2_init
+                  0x0057d0                  _LEDs_Led2_state
+                  0x0054d2                  _OverflowReset_I2C2
+                  0x005552                  _Read_I2C2
+                  0x005522                  _Start_I2C2
+                  0x00501c                  _StepperDriver_Motor_goHome
+                  0x00504e                  _StepperDriver_Motor_goTo
+                  0x004ee2                  _StepperDriver_Motor_init
+                  0x004f9e                  _StepperDriver_Motor_move
+                  0x00559a                  _StepperDriver_Motor_onLimitSwitch
+                  0x0050ae                  _StepperDriver_Motor_poll
+                  0x004f0c                  _StepperDriver_Motor_setMicrostep
+                  0x004f5c                  _StepperDriver_Motor_setSpeed
+                  0x004fe8                  _StepperDriver_Motor_sleep
+                  0x005534                  _Stop_I2C2
+                  0x005546                  _Write_I2C2
                   0x000350                  __DefaultInterrupt
                   0x00032a                  __MI2C2Interrupt
                   0x000304                  __SI2C2Interrupt
                   0x0002dc                  __T4Interrupt
-                  0x003684                  ___adddf3
+                  0x0036ae                  ___adddf3
                   0x0003cc                  ___addsf3
                   0x0003cc                  ___addsf3x
-                  0x00320e                  ___cvt_u
-                  0x00371a                  ___divdf3
-                  0x003d6c                  ___divdi3
+                  0x003238                  ___cvt_u
+                  0x003744                  ___divdf3
+                  0x003d96                  ___divdi3
                   0x000596                  ___divsf3
                   0x000596                  ___divsf3x
-                  0x003522                  ___divsi3
-                  0x00350e                  ___eqdf2
-                  0x00354a                  ___extendsfdf2
-                  0x003588                  ___fixdfsi
+                  0x00354c                  ___divsi3
+                  0x003538                  ___eqdf2
+                  0x003574                  ___extendsfdf2
+                  0x0035b2                  ___fixdfsi
                   0x000356                  ___fixunssfsi
-                  0x003f70                  ___floatdidf
-                  0x003f90                  ___floatdisf
-                  0x001c2e                  ___floatscan
-                  0x0035e0                  ___floatsidf
-                  0x0035e6                  ___floatsisf
-                  0x003fb0                  ___floatundidf
+                  0x003f9a                  ___floatdidf
+                  0x003fba                  ___floatdisf
+                  0x001c58                  ___floatscan
+                  0x00360a                  ___floatsidf
+                  0x003610                  ___floatsisf
+                  0x003fda                  ___floatundidf
                   0x0008fa                  ___floatundisf
-                  0x0035ec                  ___floatunsidf
+                  0x003616                  ___floatunsidf
                   0x00038c                  ___floatunsisf
-                  0x0025a2                  ___fmt_a
-                  0x002ae6                  ___fmt_d
-                  0x002b9a                  ___fmt_fp
-                  0x003150                  ___fmt_o
-                  0x0031ba                  ___fmt_s
-                  0x0021e6                  ___fmt_state
-                  0x0032b4                  ___fmt_u
-                  0x003306                  ___fmt_x
-                  0x003518                  ___gedf2
-                  0x003518                  ___gtdf2
-                  0x00350e                  ___ledf2
-                  0x00350e                  ___ltdf2
-                  0x003dcc                  ___moddi3
-                  0x003878                  ___muldf3
-                  0x003e28                  ___muldi3
-                  0x00366c                  ___mulp32eds3
-                  0x00366c                  ___mulp32peds3
-                  0x003aba                  ___mulsf3
-                  0x003aba                  ___mulsf3x
-                  0x00366c                  ___mulsi3
-                  0x003540                  ___nedf2
-                  0x00216c                  ___pad
-                  0x001ff0                  ___pop_float
-                  0x00202e                  ___pop_int
-                  0x0020d6                  ___pop_ptr
-                  0x0024ea                  ___printf_core
-                  0x001ea4                  ___shgetc
-                  0x001e5a                  ___shlim
-                  0x0034ba                  ___stdio_exit
-                  0x0034ce                  ___stpcpy
-                  0x003678                  ___subdf3
+                  0x0025cc                  ___fmt_a
+                  0x002b10                  ___fmt_d
+                  0x002bc4                  ___fmt_fp
+                  0x00317a                  ___fmt_o
+                  0x0031e4                  ___fmt_s
+                  0x002210                  ___fmt_state
+                  0x0032de                  ___fmt_u
+                  0x003330                  ___fmt_x
+                  0x003542                  ___gedf2
+                  0x003542                  ___gtdf2
+                  0x003538                  ___ledf2
+                  0x003538                  ___ltdf2
+                  0x003df6                  ___moddi3
+                  0x0038a2                  ___muldf3
+                  0x003e52                  ___muldi3
+                  0x003696                  ___mulp32eds3
+                  0x003696                  ___mulp32peds3
+                  0x003ae4                  ___mulsf3
+                  0x003ae4                  ___mulsf3x
+                  0x003696                  ___mulsi3
+                  0x00356a                  ___nedf2
+                  0x002196                  ___pad
+                  0x00201a                  ___pop_float
+                  0x002058                  ___pop_int
+                  0x002100                  ___pop_ptr
+                  0x002514                  ___printf_core
+                  0x001ece                  ___shgetc
+                  0x001e84                  ___shlim
+                  0x0034e4                  ___stdio_exit
+                  0x0034f8                  ___stpcpy
+                  0x0036a2                  ___subdf3
                   0x0003ba                  ___subsf3
                   0x0003ba                  ___subsf3x
-                  0x00259e                  ___tolower_l
-                  0x003450                  ___toread
-                  0x003498                  ___toread_needs_stdio_exit
-                  0x0034b4                  ___toupper_l
-                  0x0035f0                  ___truncdfsf2
-                  0x003d56                  ___udivdi3
-                  0x003c70                  ___udivmoddi3
-                  0x003646                  ___udivsi3
-                  0x00252a                  ___uflow
-                  0x003d64                  ___umoddi3
-                  0x003666                  ___umodsi3
-                  0x004006                  ___umuldi3
-                  0x0040a2                  __dPropagateNaN
+                  0x0025c8                  ___tolower_l
+                  0x00347a                  ___toread
+                  0x0034c2                  ___toread_needs_stdio_exit
+                  0x0034de                  ___toupper_l
+                  0x00361a                  ___truncdfsf2
+                  0x003d80                  ___udivdi3
+                  0x003c9a                  ___udivmoddi3
+                  0x003670                  ___udivsi3
+                  0x002554                  ___uflow
+                  0x003d8e                  ___umoddi3
+                  0x003690                  ___umodsi3
+                  0x004030                  ___umuldi3
+                  0x0040cc                  __dPropagateNaN
                   0x000252                  __data_init
                   0x000252                  __data_init_standard
-                  0x003e7a                  __dcompare
+                  0x003ea4                  __dcompare
                   0x000754                  __dnrmpackf
-                  0x003a80                  __dnsrnd
-                  0x00404a                  __dpack
-                  0x003aac                  __dpakex
-                  0x003f60                  __dreturnNaN
-                  0x003a76                  __drndex
-                  0x0039ba                  __drshft
-                  0x003ecc                  __dtype
-                  0x003ef0                  __dunpack
-                  0x003f3e                  __dunpack2
-                  0x003f66                  __dunpack2exit
-                  0x003a14                  __dupchk
-                  0x0039ac                  __dxchg
+                  0x003aaa                  __dnsrnd
+                  0x004074                  __dpack
+                  0x003ad6                  __dpakex
+                  0x003f8a                  __dreturnNaN
+                  0x003aa0                  __drndex
+                  0x0039e4                  __drshft
+                  0x003ef6                  __dtype
+                  0x003f1a                  __dunpack
+                  0x003f68                  __dunpack2
+                  0x003f90                  __dunpack2exit
+                  0x003a3e                  __dupchk
+                  0x0039d6                  __dxchg
                   0x000958                  __fpack
                   0x000390                  __funpack
                   0x0007dc                  __propnanf
@@ -637,80 +641,82 @@ External Symbols in Program Memory (by name):
                   0x000728                  __sdivf
                   0x0007ee                  __spackf
                   0x0007a8                  __typef
-                  0x003bc6                  __unpackdnrmf
+                  0x003bf0                  __unpackdnrmf
                   0x000894                  __unpackf
                   0x0009a4                  _atof
                   0x0009bc                  _atoi
                   0x000a1c                  _atol
                   0x000a84                  _atoll
-                  0x005778                  _callback
-                  0x0040be                  _copysignl
-                  0x004c1e                  _countI2cStreamIn
-                  0x0055fc                  _etOut1
-                  0x0040f2                  _fabsl
-                  0x004108                  _floorl
-                  0x004202                  _fmodl
-                  0x004c0a                  _getAvailable_out_count
-                  0x004c26                  _getI2cStreamIn
-                  0x00576e                  _getSystemMilis
-                  0x004d80                  _i2cCloseWriteFrame
-                  0x004dc2                  _i2cOpenReadFrame
-                  0x004c54                  _ini_I2C_IN
-                  0x004c7e                  _ini_I2C_OUT
-                  0x004ca8                  _ini_I2C_OUT_FM
-                  0x005794                  _initSystem
-                  0x0057a2                  _main
-                  0x002554                  _memcpy
+                  0x00580a                  _callback
+                  0x0040e8                  _copysignl
+                  0x004c42                  _countI2cStreamIn
+                  0x0055ac                  _eI2C
+                  0x005580                  _etOut1
+                  0x00411c                  _fabsl
+                  0x004132                  _floorl
+                  0x00422c                  _fmodl
+                  0x004c2e                  _getAvailable_out_count
+                  0x004c4a                  _getI2cStreamIn
+                  0x005800                  _getSystemMilis
+                  0x004da4                  _i2cCloseWriteFrame
+                  0x004de6                  _i2cOpenReadFrame
+                  0x004c78                  _ini_I2C_IN
+                  0x004ca2                  _ini_I2C_OUT
+                  0x004ccc                  _ini_I2C_OUT_FM
+                  0x005826                  _initSystem
+                  0x005834                  _main
+                  0x00257e                  _memcpy
                   0x000ae8                  _memset
-                  0x0055e2                  _onReset
-                  0x0053f8                  _pI2C
-                  0x005430                  _pI2C_boot
-                  0x005414                  _pI2C_ctrl
-                  0x00545e                  _poll_EMICBus
-                  0x004d28                  _pop_I2C_IN
-                  0x004d4c                  _pop_I2C_OUT
-                  0x004d70                  _pop_I2C_OUT_FM
-                  0x004cc0                  _push_I2C_IN
-                  0x004cf8                  _push_I2C_OUT
-                  0x004cb2                  _reset_I2C_FRAME
-                  0x00452e                  _scalbnf
-                  0x004582                  _scalbnl
-                  0x0048e2                  _sendDataToStream
-                  0x004c2e                  _setI2cStreamOut
-                  0x0056a4                  _setTime1
+                  0x005566                  _onReset
+                  0x005318                  _pI2C
+                  0x005350                  _pI2C_boot
+                  0x005334                  _pI2C_ctrl
+                  0x00537e                  _poll_EMICBus
+                  0x004d4c                  _pop_I2C_IN
+                  0x004d70                  _pop_I2C_OUT
+                  0x004d94                  _pop_I2C_OUT_FM
+                  0x004ce4                  _push_I2C_IN
+                  0x004d1c                  _push_I2C_OUT
+                  0x004cd6                  _reset_I2C_FRAME
+                  0x004558                  _scalbnf
+                  0x0045ac                  _scalbnl
+                  0x004906                  _sendDataToStream
+                  0x004c52                  _setI2cStreamOut
+                  0x005736                  _setTime1
                   0x000bb0                  _snprintf
-                  0x00349a                  _strcpy
-                  0x0052ca                  _streamCloseReadFrame
-                  0x004640                  _streamIn_I2C
-                  0x0048a2                  _streamIn_t_ptr_to_ascii
-                  0x004684                  _streamIn_t_ptr_to_char
-                  0x004648                  _streamIn_t_ptr_to_float
-                  0x0047ee                  _streamIn_t_ptr_to_int16_t
-                  0x00482a                  _streamIn_t_ptr_to_int32_t
-                  0x004866                  _streamIn_t_ptr_to_int64_t
-                  0x0047b0                  _streamIn_t_ptr_to_int8_t
-                  0x0046fc                  _streamIn_t_ptr_to_uint16_t
-                  0x004738                  _streamIn_t_ptr_to_uint32_t
-                  0x004774                  _streamIn_t_ptr_to_uint64_t
-                  0x0046be                  _streamIn_t_ptr_to_uint8_t
-                  0x005266                  _streamOpenReadFrame
-                  0x005224                  _streamOpenWriteFrame
-                  0x004644                  _streamOut_I2C
-                  0x0051ec                  _streamPop
-                  0x0051b2                  _streamPush
-                  0x005164                  _streamPushCtr
-                  0x0052b2                  _streamReOpenReadFrame
-                  0x002562                  _strlen
-                  0x000c1a                  _strtod
-                  0x000c14                  _strtof
-                  0x000c20                  _strtold
-                  0x00578a                  _systemTimeInit
-                  0x0056c0                  _timer1_Poll
-                  0x0057ba                  _timer4_init
-                  0x002592                  _tolower
-                  0x0034a8                  _toupper
-                  0x001fd4                  _vfprintf
-                  0x000c24                  _vsnprintf
+                  0x0034c4                  _strcpy
+                  0x0052ee                  _streamCloseReadFrame
+                  0x004664                  _streamIn_I2C
+                  0x0048c6                  _streamIn_t_ptr_to_ascii
+                  0x0046a8                  _streamIn_t_ptr_to_char
+                  0x00466c                  _streamIn_t_ptr_to_float
+                  0x004812                  _streamIn_t_ptr_to_int16_t
+                  0x00484e                  _streamIn_t_ptr_to_int32_t
+                  0x00488a                  _streamIn_t_ptr_to_int64_t
+                  0x0047d4                  _streamIn_t_ptr_to_int8_t
+                  0x004720                  _streamIn_t_ptr_to_uint16_t
+                  0x00475c                  _streamIn_t_ptr_to_uint32_t
+                  0x004798                  _streamIn_t_ptr_to_uint64_t
+                  0x0046e2                  _streamIn_t_ptr_to_uint8_t
+                  0x00528a                  _streamOpenReadFrame
+                  0x005248                  _streamOpenWriteFrame
+                  0x004668                  _streamOut_I2C
+                  0x005210                  _streamPop
+                  0x0051d6                  _streamPush
+                  0x005188                  _streamPushCtr
+                  0x0052d6                  _streamReOpenReadFrame
+                  0x00258c                  _strlen
+                  0x000bbc                  _strncmp
+                  0x000c44                  _strtod
+                  0x000c3e                  _strtof
+                  0x000c4a                  _strtold
+                  0x00581c                  _systemTimeInit
+                  0x005752                  _timer1_Poll
+                  0x00584c                  _timer4_init
+                  0x0025bc                  _tolower
+                  0x0034d2                  _toupper
+                  0x001ffe                  _vfprintf
+                  0x000c4e                  _vsnprintf
 
 Memory Configuration
 
@@ -760,7 +766,7 @@ LOAD /opt/microchip/xc16/v2.10/bin/bin/../../lib/libfx-elf.a
                   0x000002          0x2 SHORT 0x0 ((ABSOLUTE (__reset) >> 0x10) & 0x7f)
                   0x000003          0x2 SHORT 0x0
 
-.text             0x000200       0x43e2
+.text             0x000200       0x440c
  *(.init)
  .init            0x000200         0x4c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(crt0_standard.o)
                   0x000200                  __reset
@@ -838,259 +844,261 @@ LOAD /opt/microchip/xc16/v2.10/bin/bin/../../lib/libfx-elf.a
  .libc.snprintf
                   0x000bb0          0xc /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(snprintf.XX_o)
                   0x000bb0                  _snprintf
- .libc.strtox     0x000bbc         0x58 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtod.XX_o)
- .libc.strtof     0x000c14          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtod.XX_o)
-                  0x000c14                  _strtof_l
-                  0x000c14                  ___strtof_l
-                  0x000c14                  _strtof
- .libc.strtod     0x000c1a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtod.XX_o)
-                  0x000c1a                  _strtod_l
-                  0x000c1a                  ___strtod_l
-                  0x000c1a                  _strtod
- .libc.strtold    0x000c20          0x4 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtod.XX_o)
-                  0x000c20                  ___strtold_l
-                  0x000c20                  _strtold_l
-                  0x000c20                  _strtold
+ .libc.strncmp    0x000bbc         0x2a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strncmp.XX_o)
+                  0x000bbc                  _strncmp
+ .libc.strtox     0x000be6         0x58 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtod.XX_o)
+ .libc.strtof     0x000c3e          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtod.XX_o)
+                  0x000c3e                  _strtof_l
+                  0x000c3e                  ___strtof_l
+                  0x000c3e                  _strtof
+ .libc.strtod     0x000c44          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtod.XX_o)
+                  0x000c44                  _strtod_l
+                  0x000c44                  ___strtod_l
+                  0x000c44                  _strtod
+ .libc.strtold    0x000c4a          0x4 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtod.XX_o)
+                  0x000c4a                  ___strtold_l
+                  0x000c4a                  _strtold_l
+                  0x000c4a                  _strtold
  .libc.vsnprintf
-                  0x000c24         0x50 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(vsnprintf.XX_o)
-                  0x000c24                  _vsnprintf
+                  0x000c4e         0x50 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(vsnprintf.XX_o)
+                  0x000c4e                  _vsnprintf
  .libc.__isspace
-                  0x000c74         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(floatscan.XX_o)
- .libc.scanexp    0x000c88        0x174 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(floatscan.XX_o)
+                  0x000c9e         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(floatscan.XX_o)
+ .libc.scanexp    0x000cb2        0x174 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(floatscan.XX_o)
  .libc.hexfloat
-                  0x000dfc        0x532 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(floatscan.XX_o)
+                  0x000e26        0x532 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(floatscan.XX_o)
  .libc.decfloat
-                  0x00132e        0x900 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(floatscan.XX_o)
+                  0x001358        0x900 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(floatscan.XX_o)
  .libc.__floatscan
-                  0x001c2e        0x22c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(floatscan.XX_o)
-                  0x001c2e                  ___floatscan
- .libc.__shlim    0x001e5a         0x4a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(shgetc.XX_o)
-                  0x001e5a                  ___shlim
+                  0x001c58        0x22c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(floatscan.XX_o)
+                  0x001c58                  ___floatscan
+ .libc.__shlim    0x001e84         0x4a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(shgetc.XX_o)
+                  0x001e84                  ___shlim
  .libc.__shgetc
-                  0x001ea4        0x130 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(shgetc.XX_o)
-                  0x001ea4                  ___shgetc
+                  0x001ece        0x130 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(shgetc.XX_o)
+                  0x001ece                  ___shgetc
  .libc.vfprintf
-                  0x001fd4         0x1c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(vfprintf.XX_o)
-                  0x001fd4                  _vfprintf
+                  0x001ffe         0x1c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(vfprintf.XX_o)
+                  0x001ffe                  _vfprintf
  .libc.__pop_float
-                  0x001ff0         0x3e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_float.XX_o)
-                  0x001ff0                  ___pop_float_needed
-                  0x001ff0                  ___pop_float
+                  0x00201a         0x3e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_float.XX_o)
+                  0x00201a                  ___pop_float_needed
+                  0x00201a                  ___pop_float
  .libc.__pop_int
-                  0x00202e         0xa8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_int.XX_o)
-                  0x00202e                  ___pop_int_needed
-                  0x00202e                  ___pop_int
+                  0x002058         0xa8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_int.XX_o)
+                  0x002058                  ___pop_int_needed
+                  0x002058                  ___pop_int
  .libc.__pop_ptr
-                  0x0020d6         0x70 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_ptr.XX_o)
-                  0x0020d6                  ___pop_ptr
-                  0x0020d6                  ___pop_ptr_needed
+                  0x002100         0x70 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_ptr.XX_o)
+                  0x002100                  ___pop_ptr
+                  0x002100                  ___pop_ptr_needed
  .libc.__string_out
-                  0x002146         0x26 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
-                  0x002146                  ___out
- .libc.__pad      0x00216c         0x74 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
-                  0x00216c                  ___pad
+                  0x002170         0x26 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
+                  0x002170                  ___out
+ .libc.__pad      0x002196         0x74 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
+                  0x002196                  ___pad
  .libc.__dummy_fmt3
-                  0x0021e0          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
+                  0x00220a          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
  .libc.__dummy_fmt4
-                  0x0021e2          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
+                  0x00220c          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
  .libc.__dummy_fmts
-                  0x0021e4          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
+                  0x00220e          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
  .libc.__fmt_state
-                  0x0021e6         0x2c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
-                  0x0021e6                  ___fmt_state
+                  0x002210         0x2c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
+                  0x002210                  ___fmt_state
  .libc.vfpfcnvrt.clone.0
-                  0x002212        0x2d8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
+                  0x00223c        0x2d8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
  .libc.__printf_core
-                  0x0024ea         0x40 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
-                  0x0024ea                  ___printf_core
- .libc.__uflow    0x00252a         0x2a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__uflow.XX_o)
-                  0x00252a                  ___uflow
- .libc.memcpy     0x002554          0xe /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(memcpy.XX_o)
-                  0x002554                  _memcpy
- .libc.strlen     0x002562         0x30 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strlen.XX_o)
-                  0x002562                  _strlen
- .libc.tolower    0x002592          0xc /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(tolower.XX_o)
-                  0x002592                  _tolower
+                  0x002514         0x40 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
+                  0x002514                  ___printf_core
+ .libc.__uflow    0x002554         0x2a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__uflow.XX_o)
+                  0x002554                  ___uflow
+ .libc.memcpy     0x00257e          0xe /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(memcpy.XX_o)
+                  0x00257e                  _memcpy
+ .libc.strlen     0x00258c         0x30 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strlen.XX_o)
+                  0x00258c                  _strlen
+ .libc.tolower    0x0025bc          0xc /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(tolower.XX_o)
+                  0x0025bc                  _tolower
  .libc.__tolower_l
-                  0x00259e          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(tolower.XX_o)
-                  0x00259e                  _tolower_l
-                  0x00259e                  ___tolower_l
+                  0x0025c8          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(tolower.XX_o)
+                  0x0025c8                  _tolower_l
+                  0x0025c8                  ___tolower_l
  .libc.__LONG_DOUBLE_BITS
-                  0x0025a0          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_a.XX_o)
- .libc.__fmt_a    0x0025a2        0x544 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_a.XX_o)
-                  0x0025a2                  ___fmt_a
-                  0x0025a2                  ___fmt_a_needed
- .libc.__fmt_d    0x002ae6         0xb2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_d.XX_o)
-                  0x002ae6                  ___fmt_d_needed
-                  0x002ae6                  ___fmt_d
+                  0x0025ca          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_a.XX_o)
+ .libc.__fmt_a    0x0025cc        0x544 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_a.XX_o)
+                  0x0025cc                  ___fmt_a
+                  0x0025cc                  ___fmt_a_needed
+ .libc.__fmt_d    0x002b10         0xb2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_d.XX_o)
+                  0x002b10                  ___fmt_d_needed
+                  0x002b10                  ___fmt_d
  .libc.__LONG_DOUBLE_BITS
-                  0x002b98          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_fp.XX_o)
+                  0x002bc2          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_fp.XX_o)
  .libc.__fmt_fp
-                  0x002b9a        0x5b6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_fp.XX_o)
-                  0x002b9a                  ___fmt_fp
-                  0x002b9a                  ___fmt_f_needed
- .libc.__fmt_o    0x003150         0x6a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_o.XX_o)
-                  0x003150                  ___fmt_o_needed
-                  0x003150                  ___fmt_o
- .libc.__fmt_s    0x0031ba         0x54 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_s.XX_o)
-                  0x0031ba                  ___fmt_s
-                  0x0031ba                  ___fmt_0_needed
-                  0x0031ba                  ___fmt_s_needed
- .libc.__cvt_u    0x00320e         0xa6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_u.XX_o)
-                  0x00320e                  ___cvt_u
- .libc.__fmt_u    0x0032b4         0x52 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_u.XX_o)
-                  0x0032b4                  ___fmt_u_needed
-                  0x0032b4                  ___fmt_u
- .libc.__fmt_x    0x003306        0x14a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_x.XX_o)
-                  0x003306                  ___fmt_x
-                  0x003306                  ___fmt_x_needed
+                  0x002bc4        0x5b6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_fp.XX_o)
+                  0x002bc4                  ___fmt_fp
+                  0x002bc4                  ___fmt_f_needed
+ .libc.__fmt_o    0x00317a         0x6a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_o.XX_o)
+                  0x00317a                  ___fmt_o_needed
+                  0x00317a                  ___fmt_o
+ .libc.__fmt_s    0x0031e4         0x54 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_s.XX_o)
+                  0x0031e4                  ___fmt_s
+                  0x0031e4                  ___fmt_0_needed
+                  0x0031e4                  ___fmt_s_needed
+ .libc.__cvt_u    0x003238         0xa6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_u.XX_o)
+                  0x003238                  ___cvt_u
+ .libc.__fmt_u    0x0032de         0x52 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_u.XX_o)
+                  0x0032de                  ___fmt_u_needed
+                  0x0032de                  ___fmt_u
+ .libc.__fmt_x    0x003330        0x14a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_x.XX_o)
+                  0x003330                  ___fmt_x
+                  0x003330                  ___fmt_x_needed
  .libc.__toread
-                  0x003450         0x48 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__toread.XX_o)
-                  0x003450                  ___toread
+                  0x00347a         0x48 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__toread.XX_o)
+                  0x00347a                  ___toread
  .libc.__toread_needs_stdio_exit
-                  0x003498          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__toread.XX_o)
-                  0x003498                  ___toread_needs_stdio_exit
- .libc.strcpy     0x00349a          0xe /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strcpy.XX_o)
-                  0x00349a                  _strcpy
- .libc.toupper    0x0034a8          0xc /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(toupper.XX_o)
-                  0x0034a8                  _toupper
+                  0x0034c2          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__toread.XX_o)
+                  0x0034c2                  ___toread_needs_stdio_exit
+ .libc.strcpy     0x0034c4          0xe /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strcpy.XX_o)
+                  0x0034c4                  _strcpy
+ .libc.toupper    0x0034d2          0xc /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(toupper.XX_o)
+                  0x0034d2                  _toupper
  .libc.__toupper_l
-                  0x0034b4          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(toupper.XX_o)
-                  0x0034b4                  _toupper_l
-                  0x0034b4                  ___toupper_l
- .libc.__dummy    0x0034b6          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.XX_o)
-                  0x0034b6                  ___stdio_exit_ofl
+                  0x0034de          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(toupper.XX_o)
+                  0x0034de                  _toupper_l
+                  0x0034de                  ___toupper_l
+ .libc.__dummy    0x0034e0          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.XX_o)
+                  0x0034e0                  ___stdio_exit_ofl
  .libc.__dummy1
-                  0x0034b8          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.XX_o)
-                  0x0034b8                  ___fclose
+                  0x0034e2          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.XX_o)
+                  0x0034e2                  ___fclose
  .libc.__stdio_exit
-                  0x0034ba         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.XX_o)
-                  0x0034ba                  ___stdio_exit
-                  0x0034ba                  ___stdio_exit_needed
+                  0x0034e4         0x14 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.XX_o)
+                  0x0034e4                  ___stdio_exit
+                  0x0034e4                  ___stdio_exit_needed
  .libc.__stpcpy
-                  0x0034ce         0x40 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stpcpy.XX_o)
-                  0x0034ce                  _stpcpy
-                  0x0034ce                  ___stpcpy
- .libm.eqdf2      0x00350e          0xa /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(deqltle.XX_o)
-                  0x00350e                  ___ledf2
-                  0x00350e                  ___eqdf2
-                  0x00350e                  ___ltdf2
- .libm.gtdf2      0x003518          0xa /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dgtge.XX_o)
-                  0x003518                  ___gedf2
-                  0x003518                  ___gtdf2
- .libm.divsi3     0x003522         0x1e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divsi3.XX_o)
-                  0x003522                  ___divsi3
- .libm.nedf2      0x003540          0xa /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dne.XX_o)
-                  0x003540                  ___nedf2
+                  0x0034f8         0x40 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stpcpy.XX_o)
+                  0x0034f8                  _stpcpy
+                  0x0034f8                  ___stpcpy
+ .libm.eqdf2      0x003538          0xa /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(deqltle.XX_o)
+                  0x003538                  ___ledf2
+                  0x003538                  ___eqdf2
+                  0x003538                  ___ltdf2
+ .libm.gtdf2      0x003542          0xa /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dgtge.XX_o)
+                  0x003542                  ___gedf2
+                  0x003542                  ___gtdf2
+ .libm.divsi3     0x00354c         0x1e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divsi3.XX_o)
+                  0x00354c                  ___divsi3
+ .libm.nedf2      0x00356a          0xa /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dne.XX_o)
+                  0x00356a                  ___nedf2
  .libm.extendsfdf2
-                  0x00354a         0x3e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(extendsfdf.XX_o)
-                  0x00354a                  ___extendsfdf2
- .libm.fixdfsi    0x003588         0x58 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(fixdfsi.XX_o)
-                  0x003588                  _(float, int, long long, double, float, short, int)
+                  0x003574         0x3e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(extendsfdf.XX_o)
+                  0x003574                  ___extendsfdf2
+ .libm.fixdfsi    0x0035b2         0x58 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(fixdfsi.XX_o)
+                  0x0035b2                  _(float, int, long long, double, float, short, int)
  .libm.floatsidf
-                  0x0035e0          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatsidf.XX_o)
-                  0x0035e0                  ___floatsidf
+                  0x00360a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatsidf.XX_o)
+                  0x00360a                  ___floatsidf
  .libm.floatsisf
-                  0x0035e6          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatsisf.XX_o)
-                  0x0035e6                  ___floatsisf
+                  0x003610          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatsisf.XX_o)
+                  0x003610                  ___floatsisf
  .libm.floatunsidf
-                  0x0035ec          0x4 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatunsidf.XX_o)
-                  0x0035ec                  ___floatunsidf
+                  0x003616          0x4 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatunsidf.XX_o)
+                  0x003616                  ___floatunsidf
  .libm.truncdfsf2
-                  0x0035f0         0x56 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(truncdfsf.XX_o)
-                  0x0035f0                  ___truncdfsf2
- .libm.udivsi3    0x003646         0x20 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(udivsi3.XX_o)
-                  0x003646                  ___udivsi3
- .libm.umodsi3    0x003666          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umodsi3.XX_o)
-                  0x003666                  ___umodsi3
- .libm.mulsi3     0x00366c          0xc /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(mulsi3.XX_o)
-                  0x00366c                  ___mulp32eds3
-                  0x00366c                  ___mulp32peds3
-                  0x00366c                  ___mulsi3
- .lib_dpfops      0x003678         0xa2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpadd.XX_o)
-                  0x003678                  ___subdf3
-                  0x003684                  ___adddf3
- .lib_dpfops      0x00371a        0x15e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpdiv.XX_o)
-                  0x00371a                  ___divdf3
- .lib_dpfops      0x003878        0x11a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpmul.XX_o)
-                  0x003878                  ___muldf3
- .lib_dpfops      0x003992        0x128 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpsubs.XX_o)
-                  0x0039ac                  __dxchg
-                  0x0039ba                  __drshft
-                  0x003a14                  __dupchk
-                  0x003a76                  __drndex
-                  0x003a80                  __dnsrnd
-                  0x003aac                  __dpakex
- .libmx           0x003aba        0x10c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(mulsf3x.XX_o)
-                  0x003aba                  ___mulsf3
-                  0x003aba                  ___mulsf3x
- .libmx           0x003bc6         0x5e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(unpackdnrmfx.XX_o)
-                  0x003bc6                  __unpackdnrmf
+                  0x00361a         0x56 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(truncdfsf.XX_o)
+                  0x00361a                  ___truncdfsf2
+ .libm.udivsi3    0x003670         0x20 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(udivsi3.XX_o)
+                  0x003670                  ___udivsi3
+ .libm.umodsi3    0x003690          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umodsi3.XX_o)
+                  0x003690                  ___umodsi3
+ .libm.mulsi3     0x003696          0xc /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(mulsi3.XX_o)
+                  0x003696                  ___mulp32eds3
+                  0x003696                  ___mulp32peds3
+                  0x003696                  ___mulsi3
+ .lib_dpfops      0x0036a2         0xa2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpadd.XX_o)
+                  0x0036a2                  ___subdf3
+                  0x0036ae                  ___adddf3
+ .lib_dpfops      0x003744        0x15e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpdiv.XX_o)
+                  0x003744                  ___divdf3
+ .lib_dpfops      0x0038a2        0x11a /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpmul.XX_o)
+                  0x0038a2                  ___muldf3
+ .lib_dpfops      0x0039bc        0x128 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpsubs.XX_o)
+                  0x0039d6                  __dxchg
+                  0x0039e4                  __drshft
+                  0x003a3e                  __dupchk
+                  0x003aa0                  __drndex
+                  0x003aaa                  __dnsrnd
+                  0x003ad6                  __dpakex
+ .libmx           0x003ae4        0x10c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(mulsf3x.XX_o)
+                  0x003ae4                  ___mulsf3
+                  0x003ae4                  ___mulsf3x
+ .libmx           0x003bf0         0x5e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(unpackdnrmfx.XX_o)
+                  0x003bf0                  __unpackdnrmf
  .libm.__PplusBdi
-                  0x003c24         0x26 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
+                  0x003c4e         0x26 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
  .libm.__PminusBdi
-                  0x003c4a         0x26 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
+                  0x003c74         0x26 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
  .libm.__udivmoddi3
-                  0x003c70         0xe6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
-                  0x003c70                  ___udivmoddi3
+                  0x003c9a         0xe6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
+                  0x003c9a                  ___udivmoddi3
  .libm.__udivdi3
-                  0x003d56          0xe /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
-                  0x003d56                  ___udivdi3
+                  0x003d80          0xe /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
+                  0x003d80                  ___udivdi3
  .libm.__umoddi3
-                  0x003d64          0x8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
-                  0x003d64                  ___umoddi3
+                  0x003d8e          0x8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
+                  0x003d8e                  ___umoddi3
  .libm.__divdi3
-                  0x003d6c         0x60 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
-                  0x003d6c                  ___divdi3
+                  0x003d96         0x60 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
+                  0x003d96                  ___divdi3
  .libm.__moddi3
-                  0x003dcc         0x5c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
-                  0x003dcc                  ___moddi3
+                  0x003df6         0x5c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
+                  0x003df6                  ___moddi3
  .libm.__muldi3
-                  0x003e28         0x52 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(muldi3.XX_o)
-                  0x003e28                  ___muldi3
+                  0x003e52         0x52 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(muldi3.XX_o)
+                  0x003e52                  ___muldi3
  .libm.dcompare
-                  0x003e7a         0x52 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dcompare.XX_o)
-                  0x003e7a                  __dcompare
- .libm.dtype      0x003ecc         0x24 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dtype.XX_o)
-                  0x003ecc                  __dtype
- .libm.dunpack    0x003ef0         0x4e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dunpack.XX_o)
-                  0x003ef0                  __dunpack
+                  0x003ea4         0x52 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dcompare.XX_o)
+                  0x003ea4                  __dcompare
+ .libm.dtype      0x003ef6         0x24 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dtype.XX_o)
+                  0x003ef6                  __dtype
+ .libm.dunpack    0x003f1a         0x4e /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dunpack.XX_o)
+                  0x003f1a                  __dunpack
  .libm.dunpack2
-                  0x003f3e         0x32 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dunpack2.XX_o)
-                  0x003f3e                  __dunpack2
-                  0x003f60                  __dreturnNaN
-                  0x003f66                  __dunpack2exit
+                  0x003f68         0x32 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dunpack2.XX_o)
+                  0x003f68                  __dunpack2
+                  0x003f8a                  __dreturnNaN
+                  0x003f90                  __dunpack2exit
  .libm.floatdidf
-                  0x003f70         0x20 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatdidf.XX_o)
-                  0x003f70                  ___floatdidf
+                  0x003f9a         0x20 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatdidf.XX_o)
+                  0x003f9a                  ___floatdidf
  .libm.floatdisf
-                  0x003f90         0x20 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatdisf.XX_o)
-                  0x003f90                  ___floatdisf
+                  0x003fba         0x20 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatdisf.XX_o)
+                  0x003fba                  ___floatdisf
  .libm.floatundidf
-                  0x003fb0         0x56 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatundidf.XX_o)
-                  0x003fb0                  ___floatundidf
- .libm.umuldi3    0x004006         0x44 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umuldi3.XX_o)
-                  0x004006                  ___umuldi3
- .libm.dpack      0x00404a         0x58 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpack.XX_o)
-                  0x00404a                  __dpack
+                  0x003fda         0x56 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatundidf.XX_o)
+                  0x003fda                  ___floatundidf
+ .libm.umuldi3    0x004030         0x44 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umuldi3.XX_o)
+                  0x004030                  ___umuldi3
+ .libm.dpack      0x004074         0x58 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpack.XX_o)
+                  0x004074                  __dpack
  .libm.dPropagateNaN
-                  0x0040a2         0x1c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpropagateNaN.XX_o)
-                  0x0040a2                  __dPropagateNaN
+                  0x0040cc         0x1c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpropagateNaN.XX_o)
+                  0x0040cc                  __dPropagateNaN
  .libc.copysignl
-                  0x0040be         0x34 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(copysignl.XX_o)
-                  0x0040be                  _copysignl
- .libc.fabsl      0x0040f2         0x16 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(fabsl.XX_o)
-                  0x0040f2                  _fabsl
- .libc.floorl     0x004108         0xf8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(floorl.XX_o)
-                  0x004108                  _floorl
+                  0x0040e8         0x34 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(copysignl.XX_o)
+                  0x0040e8                  _copysignl
+ .libc.fabsl      0x00411c         0x16 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(fabsl.XX_o)
+                  0x00411c                  _fabsl
+ .libc.floorl     0x004132         0xf8 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(floorl.XX_o)
+                  0x004132                  _floorl
  .libc.__LONG_DOUBLE_BITS
-                  0x004200          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(fmodl.XX_o)
- .libc.fmodl      0x004202        0x32c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(fmodl.XX_o)
-                  0x004202                  _fmodl
- .libc.scalbnf    0x00452e         0x54 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(scalbnf.XX_o)
-                  0x00452e                  _scalbnf
- .libc.scalbnl    0x004582         0x60 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(scalbnl.XX_o)
-                  0x004582                  _scalbnl
+                  0x00422a          0x2 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(fmodl.XX_o)
+ .libc.fmodl      0x00422c        0x32c /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(fmodl.XX_o)
+                  0x00422c                  _fmodl
+ .libc.scalbnf    0x004558         0x54 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(scalbnf.XX_o)
+                  0x004558                  _scalbnf
+ .libc.scalbnl    0x0045ac         0x60 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(scalbnl.XX_o)
+                  0x0045ac                  _scalbnl
 
 usercode
  *(usercode)
@@ -1930,7 +1938,7 @@ LOAD default_isr
 LOAD data_init
 
 __c30_signature
-                  0x000520        0x216
+                  0x000520        0x21c
  __c30_signature
                   0x000520          0x6 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/timer.o
  __c30_signature
@@ -1986,129 +1994,131 @@ __c30_signature
  __c30_signature
                   0x0005bc          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(snprintf.XX_o)
  __c30_signature
-                  0x0005c2          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtod.XX_o)
+                  0x0005c2          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strncmp.XX_o)
  __c30_signature
-                  0x0005c8          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(vsnprintf.XX_o)
+                  0x0005c8          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strtod.XX_o)
  __c30_signature
-                  0x0005ce          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__errno_location.XX_o)
+                  0x0005ce          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(vsnprintf.XX_o)
  __c30_signature
-                  0x0005d4          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(floatscan.XX_o)
+                  0x0005d4          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__errno_location.XX_o)
  __c30_signature
-                  0x0005da          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(shgetc.XX_o)
+                  0x0005da          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(floatscan.XX_o)
  __c30_signature
-                  0x0005e0          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(vfprintf.XX_o)
+                  0x0005e0          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(shgetc.XX_o)
  __c30_signature
-                  0x0005e6          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__io_fmt_needed.XX_o)
+                  0x0005e6          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(vfprintf.XX_o)
  __c30_signature
-                  0x0005ec          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_float.XX_o)
+                  0x0005ec          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__io_fmt_needed.XX_o)
  __c30_signature
-                  0x0005f2          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_int.XX_o)
+                  0x0005f2          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_float.XX_o)
  __c30_signature
-                  0x0005f8          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_ptr.XX_o)
+                  0x0005f8          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_int.XX_o)
  __c30_signature
-                  0x0005fe          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
+                  0x0005fe          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__pop_ptr.XX_o)
  __c30_signature
-                  0x000604          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__uflow.XX_o)
+                  0x000604          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__printf_core.XX_o)
  __c30_signature
-                  0x00060a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(memcpy.XX_o)
+                  0x00060a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__uflow.XX_o)
  __c30_signature
-                  0x000610          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strlen.XX_o)
+                  0x000610          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(memcpy.XX_o)
  __c30_signature
-                  0x000616          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(tolower.XX_o)
+                  0x000616          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strlen.XX_o)
  __c30_signature
-                  0x00061c          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_a.XX_o)
+                  0x00061c          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(tolower.XX_o)
  __c30_signature
-                  0x000622          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_d.XX_o)
+                  0x000622          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_a.XX_o)
  __c30_signature
-                  0x000628          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_fp.XX_o)
+                  0x000628          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_d.XX_o)
  __c30_signature
-                  0x00062e          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_o.XX_o)
+                  0x00062e          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_fp.XX_o)
  __c30_signature
-                  0x000634          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_s.XX_o)
+                  0x000634          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_o.XX_o)
  __c30_signature
-                  0x00063a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_u.XX_o)
+                  0x00063a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_s.XX_o)
  __c30_signature
-                  0x000640          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_x.XX_o)
+                  0x000640          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_u.XX_o)
  __c30_signature
-                  0x000646          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__toread.XX_o)
+                  0x000646          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__fmt_x.XX_o)
  __c30_signature
-                  0x00064c          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strcpy.XX_o)
+                  0x00064c          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__toread.XX_o)
  __c30_signature
-                  0x000652          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(toupper.XX_o)
+                  0x000652          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(strcpy.XX_o)
  __c30_signature
-                  0x000658          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.XX_o)
+                  0x000658          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(toupper.XX_o)
  __c30_signature
-                  0x00065e          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stpcpy.XX_o)
+                  0x00065e          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(__stdio_exit.XX_o)
  __c30_signature
-                  0x000664          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(deqltle.XX_o)
+                  0x000664          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-elf.a(stpcpy.XX_o)
  __c30_signature
-                  0x00066a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dgtge.XX_o)
+                  0x00066a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(deqltle.XX_o)
  __c30_signature
-                  0x000670          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divsi3.XX_o)
+                  0x000670          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dgtge.XX_o)
  __c30_signature
-                  0x000676          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dne.XX_o)
+                  0x000676          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divsi3.XX_o)
  __c30_signature
-                  0x00067c          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(extendsfdf.XX_o)
+                  0x00067c          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dne.XX_o)
  __c30_signature
-                  0x000682          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(fixdfsi.XX_o)
+                  0x000682          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(extendsfdf.XX_o)
  __c30_signature
-                  0x000688          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatsidf.XX_o)
+                  0x000688          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(fixdfsi.XX_o)
  __c30_signature
-                  0x00068e          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatsisf.XX_o)
+                  0x00068e          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatsidf.XX_o)
  __c30_signature
-                  0x000694          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatunsidf.XX_o)
+                  0x000694          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatsisf.XX_o)
  __c30_signature
-                  0x00069a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(truncdfsf.XX_o)
+                  0x00069a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatunsidf.XX_o)
  __c30_signature
-                  0x0006a0          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(udivsi3.XX_o)
+                  0x0006a0          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(truncdfsf.XX_o)
  __c30_signature
-                  0x0006a6          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umodsi3.XX_o)
+                  0x0006a6          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(udivsi3.XX_o)
  __c30_signature
-                  0x0006ac          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(mulsi3.XX_o)
+                  0x0006ac          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umodsi3.XX_o)
  __c30_signature
-                  0x0006b2          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpadd.XX_o)
+                  0x0006b2          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(mulsi3.XX_o)
  __c30_signature
-                  0x0006b8          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpdiv.XX_o)
+                  0x0006b8          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpadd.XX_o)
  __c30_signature
-                  0x0006be          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpmul.XX_o)
+                  0x0006be          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpdiv.XX_o)
  __c30_signature
-                  0x0006c4          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpsubs.XX_o)
+                  0x0006c4          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpmul.XX_o)
  __c30_signature
-                  0x0006ca          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
+                  0x0006ca          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpsubs.XX_o)
  __c30_signature
-                  0x0006d0          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(muldi3.XX_o)
+                  0x0006d0          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(divmoddi3.XX_o)
  __c30_signature
-                  0x0006d6          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dcompare.XX_o)
+                  0x0006d6          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(muldi3.XX_o)
  __c30_signature
-                  0x0006dc          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dtype.XX_o)
+                  0x0006dc          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dcompare.XX_o)
  __c30_signature
-                  0x0006e2          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dunpack.XX_o)
+                  0x0006e2          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dtype.XX_o)
  __c30_signature
-                  0x0006e8          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dunpack2.XX_o)
+                  0x0006e8          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dunpack.XX_o)
  __c30_signature
-                  0x0006ee          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatdidf.XX_o)
+                  0x0006ee          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dunpack2.XX_o)
  __c30_signature
-                  0x0006f4          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatdisf.XX_o)
+                  0x0006f4          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatdidf.XX_o)
  __c30_signature
-                  0x0006fa          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatundidf.XX_o)
+                  0x0006fa          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatdisf.XX_o)
  __c30_signature
-                  0x000700          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umuldi3.XX_o)
+                  0x000700          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(floatundidf.XX_o)
  __c30_signature
-                  0x000706          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpack.XX_o)
+                  0x000706          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(umuldi3.XX_o)
  __c30_signature
-                  0x00070c          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpropagateNaN.XX_o)
+                  0x00070c          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpack.XX_o)
  __c30_signature
-                  0x000712          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(copysignl.XX_o)
+                  0x000712          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libc99-pic30-elf.a(dpropagateNaN.XX_o)
  __c30_signature
-                  0x000718          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(fabsl.XX_o)
+                  0x000718          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(copysignl.XX_o)
  __c30_signature
-                  0x00071e          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(floorl.XX_o)
+                  0x00071e          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(fabsl.XX_o)
  __c30_signature
-                  0x000724          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(fmodl.XX_o)
+                  0x000724          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(floorl.XX_o)
  __c30_signature
-                  0x00072a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(scalbnf.XX_o)
+                  0x00072a          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(fmodl.XX_o)
  __c30_signature
-                  0x000730          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(scalbnl.XX_o)
+                  0x000730          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(scalbnf.XX_o)
+ __c30_signature
+                  0x000736          0x6 /opt/microchip/xc16/v2.10/bin/bin/../../lib/libm-elf.a(scalbnl.XX_o)
 
 __xc_reference_data
 
@@ -2181,107 +2191,108 @@ __xc_reference_data
 .config_IESO      0x00abfc          0x2
  .config_IESO     0x00abfc          0x2 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/main.o
 
-.const              0xc5e2         0x66 load address 0x0045e2  
- .const             0xc5e2         0x5e /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/userFncFile.o
- .const             0xc640          0x8 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/I2C2_driver.o
-                    0xc640                  _streamIn_I2C
-                    0xc644                  _streamOut_I2C
+.const              0xc60c         0x60 load address 0x00460c  
+ .const             0xc60c         0x58 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/userFncFile.o
+ .const             0xc664          0x8 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/I2C2_driver.o
+                    0xc664                  _streamIn_I2C
+                    0xc668                  _streamOut_I2C
 
-.text             0x004648        0xeb2
- .text            0x004648        0x5b6 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/streamIn.o
-                  0x004648                  _streamIn_t_ptr_to_float
-                  0x004684                  _streamIn_t_ptr_to_char
-                  0x0046be                  _streamIn_t_ptr_to_uint8_t
-                  0x0046fc                  _streamIn_t_ptr_to_uint16_t
-                  0x004738                  _streamIn_t_ptr_to_uint32_t
-                  0x004774                  _streamIn_t_ptr_to_uint64_t
-                  0x0047b0                  _streamIn_t_ptr_to_int8_t
-                  0x0047ee                  _streamIn_t_ptr_to_int16_t
-                  0x00482a                  _streamIn_t_ptr_to_int32_t
-                  0x004866                  _streamIn_t_ptr_to_int64_t
-                  0x0048a2                  _streamIn_t_ptr_to_ascii
-                  0x0048e2                  _sendDataToStream
- .text            0x004bfe        0x2c0 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/I2C2_driver.o
-                  0x004bfe                  _Init_I2C_Driver
-                  0x004c0a                  _getAvailable_out_count
-                  0x004c1e                  _countI2cStreamIn
-                  0x004c26                  _getI2cStreamIn
-                  0x004c2e                  _setI2cStreamOut
-                  0x004c3a                  _I2C_Begin_Transmision
-                  0x004c54                  _ini_I2C_IN
-                  0x004c7e                  _ini_I2C_OUT
-                  0x004ca8                  _ini_I2C_OUT_FM
-                  0x004cb2                  _reset_I2C_FRAME
-                  0x004cc0                  _push_I2C_IN
-                  0x004cf8                  _push_I2C_OUT
-                  0x004d28                  _pop_I2C_IN
-                  0x004d4c                  _pop_I2C_OUT
-                  0x004d70                  _pop_I2C_OUT_FM
-                  0x004d80                  _i2cCloseWriteFrame
-                  0x004dc2                  _i2cOpenReadFrame
-                  0x004e0e                  _I2c_driver_callback_slave
-                  0x004e4e                  _I2c_driver_callback_master
- .text            0x004ebe        0x2a6 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/StepperDriver_Motor.o
-                  0x004ebe                  _StepperDriver_Motor_init
-                  0x004ee8                  _StepperDriver_Motor_setMicrostep
-                  0x004f38                  _StepperDriver_Motor_setSpeed
-                  0x004f7a                  _StepperDriver_Motor_move
-                  0x004fc4                  _StepperDriver_Motor_sleep
-                  0x004ff8                  _StepperDriver_Motor_goHome
-                  0x00502a                  _StepperDriver_Motor_goTo
-                  0x00508a                  _StepperDriver_Motor_poll
- .text            0x005164        0x190 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/stream.o
-                  0x005164                  _streamPushCtr
-                  0x0051b2                  _streamPush
-                  0x0051ec                  _streamPop
-                  0x005224                  _streamOpenWriteFrame
-                  0x005266                  _streamOpenReadFrame
-                  0x0052b2                  _streamReOpenReadFrame
-                  0x0052ca                  _streamCloseReadFrame
- .text            0x0052f4        0x104 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/I2C2.o
-                  0x0052f4                  _Init_Master_I2C2
-                  0x00535c                  _CollisionReset_I2C2
-                  0x005364                  _OverflowReset_I2C2
-                  0x00536c                  _IsStartI2c2
-                  0x005378                  _IsCollisionDetectI2c2
-                  0x005384                  _IsStopI2c2
-                  0x005390                  _IsReceiveBufferFullI2c2
-                  0x00539c                  _IsDataOrAddressI2c2
-                  0x0053a8                  _IsReceiveOverflowI2c2
-                  0x0053b4                  _Start_I2C2
-                  0x0053c6                  _Stop_I2C2
-                  0x0053d8                  _Write_I2C2
-                  0x0053e4                  _Read_I2C2
- .text            0x0053f8        0x102 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/EMICBus.o
-                  0x0053f8                  _pI2C
-                  0x005414                  _pI2C_ctrl
-                  0x005430                  _pI2C_boot
-                  0x005450                  _EMICBus_init
-                  0x00545e                  _poll_EMICBus
+.text             0x00466c        0xfe2
+ .text            0x00466c        0x5b6 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/streamIn.o
+                  0x00466c                  _streamIn_t_ptr_to_float
+                  0x0046a8                  _streamIn_t_ptr_to_char
+                  0x0046e2                  _streamIn_t_ptr_to_uint8_t
+                  0x004720                  _streamIn_t_ptr_to_uint16_t
+                  0x00475c                  _streamIn_t_ptr_to_uint32_t
+                  0x004798                  _streamIn_t_ptr_to_uint64_t
+                  0x0047d4                  _streamIn_t_ptr_to_int8_t
+                  0x004812                  _streamIn_t_ptr_to_int16_t
+                  0x00484e                  _streamIn_t_ptr_to_int32_t
+                  0x00488a                  _streamIn_t_ptr_to_int64_t
+                  0x0048c6                  _streamIn_t_ptr_to_ascii
+                  0x004906                  _sendDataToStream
+ .text            0x004c22        0x2c0 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/I2C2_driver.o
+                  0x004c22                  _Init_I2C_Driver
+                  0x004c2e                  _getAvailable_out_count
+                  0x004c42                  _countI2cStreamIn
+                  0x004c4a                  _getI2cStreamIn
+                  0x004c52                  _setI2cStreamOut
+                  0x004c5e                  _I2C_Begin_Transmision
+                  0x004c78                  _ini_I2C_IN
+                  0x004ca2                  _ini_I2C_OUT
+                  0x004ccc                  _ini_I2C_OUT_FM
+                  0x004cd6                  _reset_I2C_FRAME
+                  0x004ce4                  _push_I2C_IN
+                  0x004d1c                  _push_I2C_OUT
+                  0x004d4c                  _pop_I2C_IN
+                  0x004d70                  _pop_I2C_OUT
+                  0x004d94                  _pop_I2C_OUT_FM
+                  0x004da4                  _i2cCloseWriteFrame
+                  0x004de6                  _i2cOpenReadFrame
+                  0x004e32                  _I2c_driver_callback_slave
+                  0x004e72                  _I2c_driver_callback_master
+ .text            0x004ee2        0x2a6 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/StepperDriver_Motor.o
+                  0x004ee2                  _StepperDriver_Motor_init
+                  0x004f0c                  _StepperDriver_Motor_setMicrostep
+                  0x004f5c                  _StepperDriver_Motor_setSpeed
+                  0x004f9e                  _StepperDriver_Motor_move
+                  0x004fe8                  _StepperDriver_Motor_sleep
+                  0x00501c                  _StepperDriver_Motor_goHome
+                  0x00504e                  _StepperDriver_Motor_goTo
+                  0x0050ae                  _StepperDriver_Motor_poll
+ .text            0x005188        0x190 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/stream.o
+                  0x005188                  _streamPushCtr
+                  0x0051d6                  _streamPush
+                  0x005210                  _streamPop
+                  0x005248                  _streamOpenWriteFrame
+                  0x00528a                  _streamOpenReadFrame
+                  0x0052d6                  _streamReOpenReadFrame
+                  0x0052ee                  _streamCloseReadFrame
+ .text            0x005318        0x14a /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/EMICBus.o
+                  0x005318                  _pI2C
+                  0x005334                  _pI2C_ctrl
+                  0x005350                  _pI2C_boot
+                  0x005370                  _EMICBus_init
+                  0x00537e                  _poll_EMICBus
+ .text            0x005462        0x104 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/I2C2.o
+                  0x005462                  _Init_Master_I2C2
+                  0x0054ca                  _CollisionReset_I2C2
+                  0x0054d2                  _OverflowReset_I2C2
+                  0x0054da                  _IsStartI2c2
+                  0x0054e6                  _IsCollisionDetectI2c2
+                  0x0054f2                  _IsStopI2c2
+                  0x0054fe                  _IsReceiveBufferFullI2c2
+                  0x00550a                  _IsDataOrAddressI2c2
+                  0x005516                  _IsReceiveOverflowI2c2
+                  0x005522                  _Start_I2C2
+                  0x005534                  _Stop_I2C2
+                  0x005546                  _Write_I2C2
+                  0x005552                  _Read_I2C2
+ .text            0x005566         0xe8 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/userFncFile.o
+                  0x005566                  _onReset
+                  0x005580                  _etOut1
+                  0x00559a                  _StepperDriver_Motor_onLimitSwitch
+                  0x0055ac                  _eI2C
 
-.dinit            0x0054fa         0xe8
- .dinit           0x0054fa         0xe8 data_init
+.dinit            0x00564e         0xe8
+ .dinit           0x00564e         0xe8 data_init
 
-.text             0x0055e2        0x1ee
- .text            0x0055e2         0xc2 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/userFncFile.o
-                  0x0055e2                  _onReset
-                  0x0055fc                  _etOut1
-                  0x005692                  _StepperDriver_Motor_onLimitSwitch
- .text            0x0056a4         0x5a /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/timer_api1.o
-                  0x0056a4                  _setTime1
-                  0x0056c0                  _timer1_Poll
- .text            0x0056fe         0x38 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/led_Led1.o
-                  0x0056fe                  _LEDs_Led1_init
-                  0x005706                  _LEDs_Led1_state
- .text            0x005736         0x38 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/led_Led2.o
-                  0x005736                  _LEDs_Led2_init
-                  0x00573e                  _LEDs_Led2_state
- .text            0x00576e         0x26 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/systemTimer.o
-                  0x00576e                  _getSystemMilis
-                  0x005778                  _callback
-                  0x00578a                  _systemTimeInit
- .text            0x005794         0x26 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/main.o
-                  0x005794                  _initSystem
-                  0x0057a2                  _main
- .text            0x0057ba         0x16 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/timer.o
-                  0x0057ba                  _timer4_init
+.text             0x005736        0x12c
+ .text            0x005736         0x5a /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/timer_api1.o
+                  0x005736                  _setTime1
+                  0x005752                  _timer1_Poll
+ .text            0x005790         0x38 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/led_Led1.o
+                  0x005790                  _LEDs_Led1_init
+                  0x005798                  _LEDs_Led1_state
+ .text            0x0057c8         0x38 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/led_Led2.o
+                  0x0057c8                  _LEDs_Led2_init
+                  0x0057d0                  _LEDs_Led2_state
+ .text            0x005800         0x26 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/systemTimer.o
+                  0x005800                  _getSystemMilis
+                  0x00580a                  _callback
+                  0x00581c                  _systemTimeInit
+ .text            0x005826         0x26 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/main.o
+                  0x005826                  _initSystem
+                  0x005834                  _main
+ .text            0x00584c         0x16 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/timer.o
+                  0x00584c                  _timer4_init
