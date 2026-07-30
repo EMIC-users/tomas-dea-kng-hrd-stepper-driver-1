@@ -22,7 +22,7 @@ void etOut1()
 {
     StepperDriver_Motor_sleep(0);
     StepperDriver_Motor_setMicrostep(8);
-    StepperDriver_Motor_setSpeed(400);
+    StepperDriver_Motor_setSpeed(150);
     pI2C("INIT\t1");
     StepperDriver_Motor_goHome(0);
 }
@@ -43,6 +43,23 @@ void eI2C(char* tag, const streamIn_t* const msg)
         if (streamIn_t_ptr_to_uint16_t((streamIn_t*)msg) <= 800)
         {
             StepperDriver_Motor_goTo(streamIn_t_ptr_to_uint32_t((streamIn_t*)msg));
+            pI2C("ECOPASO\t$r", msg);
+        }
+    }
+    else if (strncmp(tag, "ABRIR", 5) == 0)
+    {
+        if (streamIn_t_ptr_to_uint16_t((streamIn_t*)msg) <= 800)
+        {
+            StepperDriver_Motor_move(1, streamIn_t_ptr_to_uint16_t((streamIn_t*)msg));
+            pI2C("ECOABRIR\t$r", msg);
+        }
+    }
+    else if (strncmp(tag, "CERRAR", 6) == 0)
+    {
+        if (streamIn_t_ptr_to_uint16_t((streamIn_t*)msg) <= 800)
+        {
+            StepperDriver_Motor_move(0, streamIn_t_ptr_to_uint16_t((streamIn_t*)msg));
+            pI2C("ECOCERR\t$r", msg);
         }
     }
     else
