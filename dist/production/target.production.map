@@ -244,12 +244,12 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200              0x440c          0x6612  (26130)
-.const                      0x460c                0x1c            0x2a  (42)
-.text                       0x4628               0xefa          0x1677  (5751)
-.dinit                      0x5522                0xe2           0x153  (339)
-.text                       0x5604               0x198           0x264  (612)
+.const                      0x460c                0x4a            0x6f  (111)
+.text                       0x4656               0xefa          0x1677  (5751)
+.dinit                      0x5550                0xe2           0x153  (339)
+.text                       0x5632               0x200           0x300  (768)
 
-                 Total "program" memory used (bytes):         0x806a  (32874) 50%
+                 Total "program" memory used (bytes):         0x814b  (33099) 50%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -425,122 +425,122 @@ External Symbols in Program Memory (by address):
                   0x00422c                  _fmodl
                   0x004558                  _scalbnf
                   0x0045ac                  _scalbnl
-                  0x004620                  _streamIn_I2C
-                  0x004624                  _streamOut_I2C
-                  0x004628                  _streamIn_t_ptr_to_float
-                  0x004664                  _streamIn_t_ptr_to_char
-                  0x00469e                  _streamIn_t_ptr_to_uint8_t
-                  0x0046dc                  _streamIn_t_ptr_to_uint16_t
-                  0x004718                  _streamIn_t_ptr_to_uint32_t
-                  0x004754                  _streamIn_t_ptr_to_uint64_t
-                  0x004790                  _streamIn_t_ptr_to_int8_t
-                  0x0047ce                  _streamIn_t_ptr_to_int16_t
-                  0x00480a                  _streamIn_t_ptr_to_int32_t
-                  0x004846                  _streamIn_t_ptr_to_int64_t
-                  0x004882                  _streamIn_t_ptr_to_ascii
-                  0x0048c2                  _sendDataToStream
-                  0x004bde                  _Init_I2C_Driver
-                  0x004bea                  _getAvailable_out_count
-                  0x004bfe                  _countI2cStreamIn
-                  0x004c06                  _getI2cStreamIn
-                  0x004c0e                  _setI2cStreamOut
-                  0x004c1a                  _I2C_Begin_Transmision
-                  0x004c34                  _ini_I2C_IN
-                  0x004c5e                  _ini_I2C_OUT
-                  0x004c88                  _ini_I2C_OUT_FM
-                  0x004c92                  _reset_I2C_FRAME
-                  0x004ca0                  _push_I2C_IN
-                  0x004cd8                  _push_I2C_OUT
-                  0x004d08                  _pop_I2C_IN
-                  0x004d2c                  _pop_I2C_OUT
-                  0x004d50                  _pop_I2C_OUT_FM
-                  0x004d60                  _i2cCloseWriteFrame
-                  0x004da2                  _i2cOpenReadFrame
-                  0x004dee                  _I2c_driver_callback_slave
-                  0x004e2e                  _I2c_driver_callback_master
-                  0x004e9e                  _StepperDriver_Motor_init
-                  0x004ec8                  _StepperDriver_Motor_setMicrostep
-                  0x004f18                  _StepperDriver_Motor_setSpeed
-                  0x004f5a                  _StepperDriver_Motor_move
-                  0x004fa4                  _StepperDriver_Motor_sleep
-                  0x004fd8                  _StepperDriver_Motor_goHome
-                  0x00500a                  _StepperDriver_Motor_goTo
-                  0x00506a                  _StepperDriver_Motor_poll
-                  0x005144                  _streamPushCtr
-                  0x005192                  _streamPush
-                  0x0051cc                  _streamPop
-                  0x005204                  _streamOpenWriteFrame
-                  0x005246                  _streamOpenReadFrame
-                  0x005292                  _streamReOpenReadFrame
-                  0x0052aa                  _streamCloseReadFrame
-                  0x0052d4                  _pI2C
-                  0x0052f0                  _pI2C_ctrl
-                  0x00530c                  _pI2C_boot
-                  0x00532c                  _EMICBus_init
-                  0x00533a                  _poll_EMICBus
-                  0x00541e                  _Init_Master_I2C2
-                  0x005486                  _CollisionReset_I2C2
-                  0x00548e                  _OverflowReset_I2C2
-                  0x005496                  _IsStartI2c2
-                  0x0054a2                  _IsCollisionDetectI2c2
-                  0x0054ae                  _IsStopI2c2
-                  0x0054ba                  _IsReceiveBufferFullI2c2
-                  0x0054c6                  _IsDataOrAddressI2c2
-                  0x0054d2                  _IsReceiveOverflowI2c2
-                  0x0054de                  _Start_I2C2
-                  0x0054f0                  _Stop_I2C2
-                  0x005502                  _Write_I2C2
-                  0x00550e                  _Read_I2C2
-                  0x005604                  _onReset
-                  0x005616                  _etOut1
-                  0x005634                  _StepperDriver_Motor_onLimitSwitch
-                  0x00564a                  _eI2C
-                  0x005670                  _setTime1
-                  0x00568c                  _timer1_Poll
-                  0x0056ca                  _LEDs_Led1_init
-                  0x0056d2                  _LEDs_Led1_state
-                  0x005702                  _LEDs_Led2_init
-                  0x00570a                  _LEDs_Led2_state
-                  0x00573a                  _getSystemMilis
-                  0x005744                  _callback
-                  0x005756                  _systemTimeInit
-                  0x005760                  _initSystem
-                  0x00576e                  _main
-                  0x005786                  _timer4_init
+                  0x00464e                  _streamIn_I2C
+                  0x004652                  _streamOut_I2C
+                  0x004656                  _streamIn_t_ptr_to_float
+                  0x004692                  _streamIn_t_ptr_to_char
+                  0x0046cc                  _streamIn_t_ptr_to_uint8_t
+                  0x00470a                  _streamIn_t_ptr_to_uint16_t
+                  0x004746                  _streamIn_t_ptr_to_uint32_t
+                  0x004782                  _streamIn_t_ptr_to_uint64_t
+                  0x0047be                  _streamIn_t_ptr_to_int8_t
+                  0x0047fc                  _streamIn_t_ptr_to_int16_t
+                  0x004838                  _streamIn_t_ptr_to_int32_t
+                  0x004874                  _streamIn_t_ptr_to_int64_t
+                  0x0048b0                  _streamIn_t_ptr_to_ascii
+                  0x0048f0                  _sendDataToStream
+                  0x004c0c                  _Init_I2C_Driver
+                  0x004c18                  _getAvailable_out_count
+                  0x004c2c                  _countI2cStreamIn
+                  0x004c34                  _getI2cStreamIn
+                  0x004c3c                  _setI2cStreamOut
+                  0x004c48                  _I2C_Begin_Transmision
+                  0x004c62                  _ini_I2C_IN
+                  0x004c8c                  _ini_I2C_OUT
+                  0x004cb6                  _ini_I2C_OUT_FM
+                  0x004cc0                  _reset_I2C_FRAME
+                  0x004cce                  _push_I2C_IN
+                  0x004d06                  _push_I2C_OUT
+                  0x004d36                  _pop_I2C_IN
+                  0x004d5a                  _pop_I2C_OUT
+                  0x004d7e                  _pop_I2C_OUT_FM
+                  0x004d8e                  _i2cCloseWriteFrame
+                  0x004dd0                  _i2cOpenReadFrame
+                  0x004e1c                  _I2c_driver_callback_slave
+                  0x004e5c                  _I2c_driver_callback_master
+                  0x004ecc                  _StepperDriver_Motor_init
+                  0x004ef6                  _StepperDriver_Motor_setMicrostep
+                  0x004f46                  _StepperDriver_Motor_setSpeed
+                  0x004f88                  _StepperDriver_Motor_move
+                  0x004fd2                  _StepperDriver_Motor_sleep
+                  0x005006                  _StepperDriver_Motor_goHome
+                  0x005038                  _StepperDriver_Motor_goTo
+                  0x005098                  _StepperDriver_Motor_poll
+                  0x005172                  _streamPushCtr
+                  0x0051c0                  _streamPush
+                  0x0051fa                  _streamPop
+                  0x005232                  _streamOpenWriteFrame
+                  0x005274                  _streamOpenReadFrame
+                  0x0052c0                  _streamReOpenReadFrame
+                  0x0052d8                  _streamCloseReadFrame
+                  0x005302                  _pI2C
+                  0x00531e                  _pI2C_ctrl
+                  0x00533a                  _pI2C_boot
+                  0x00535a                  _EMICBus_init
+                  0x005368                  _poll_EMICBus
+                  0x00544c                  _Init_Master_I2C2
+                  0x0054b4                  _CollisionReset_I2C2
+                  0x0054bc                  _OverflowReset_I2C2
+                  0x0054c4                  _IsStartI2c2
+                  0x0054d0                  _IsCollisionDetectI2c2
+                  0x0054dc                  _IsStopI2c2
+                  0x0054e8                  _IsReceiveBufferFullI2c2
+                  0x0054f4                  _IsDataOrAddressI2c2
+                  0x005500                  _IsReceiveOverflowI2c2
+                  0x00550c                  _Start_I2C2
+                  0x00551e                  _Stop_I2C2
+                  0x005530                  _Write_I2C2
+                  0x00553c                  _Read_I2C2
+                  0x005632                  _onReset
+                  0x005644                  _etOut1
+                  0x005662                  _StepperDriver_Motor_onLimitSwitch
+                  0x005678                  _eI2C
+                  0x005706                  _setTime1
+                  0x005722                  _timer1_Poll
+                  0x005760                  _LEDs_Led1_init
+                  0x005768                  _LEDs_Led1_state
+                  0x005798                  _LEDs_Led2_init
+                  0x0057a0                  _LEDs_Led2_state
+                  0x0057d0                  _getSystemMilis
+                  0x0057da                  _callback
+                  0x0057ec                  _systemTimeInit
+                  0x0057f6                  _initSystem
+                  0x005804                  _main
+                  0x00581c                  _timer4_init
 
 External Symbols in Program Memory (by name):
 
-                  0x005486                  _CollisionReset_I2C2
-                  0x00532c                  _EMICBus_init
-                  0x004c1a                  _I2C_Begin_Transmision
-                  0x004e2e                  _I2c_driver_callback_master
-                  0x004dee                  _I2c_driver_callback_slave
-                  0x004bde                  _Init_I2C_Driver
-                  0x00541e                  _Init_Master_I2C2
-                  0x0054a2                  _IsCollisionDetectI2c2
-                  0x0054c6                  _IsDataOrAddressI2c2
-                  0x0054ba                  _IsReceiveBufferFullI2c2
-                  0x0054d2                  _IsReceiveOverflowI2c2
-                  0x005496                  _IsStartI2c2
-                  0x0054ae                  _IsStopI2c2
-                  0x0056ca                  _LEDs_Led1_init
-                  0x0056d2                  _LEDs_Led1_state
-                  0x005702                  _LEDs_Led2_init
-                  0x00570a                  _LEDs_Led2_state
-                  0x00548e                  _OverflowReset_I2C2
-                  0x00550e                  _Read_I2C2
-                  0x0054de                  _Start_I2C2
-                  0x004fd8                  _StepperDriver_Motor_goHome
-                  0x00500a                  _StepperDriver_Motor_goTo
-                  0x004e9e                  _StepperDriver_Motor_init
-                  0x004f5a                  _StepperDriver_Motor_move
-                  0x005634                  _StepperDriver_Motor_onLimitSwitch
-                  0x00506a                  _StepperDriver_Motor_poll
-                  0x004ec8                  _StepperDriver_Motor_setMicrostep
-                  0x004f18                  _StepperDriver_Motor_setSpeed
-                  0x004fa4                  _StepperDriver_Motor_sleep
-                  0x0054f0                  _Stop_I2C2
-                  0x005502                  _Write_I2C2
+                  0x0054b4                  _CollisionReset_I2C2
+                  0x00535a                  _EMICBus_init
+                  0x004c48                  _I2C_Begin_Transmision
+                  0x004e5c                  _I2c_driver_callback_master
+                  0x004e1c                  _I2c_driver_callback_slave
+                  0x004c0c                  _Init_I2C_Driver
+                  0x00544c                  _Init_Master_I2C2
+                  0x0054d0                  _IsCollisionDetectI2c2
+                  0x0054f4                  _IsDataOrAddressI2c2
+                  0x0054e8                  _IsReceiveBufferFullI2c2
+                  0x005500                  _IsReceiveOverflowI2c2
+                  0x0054c4                  _IsStartI2c2
+                  0x0054dc                  _IsStopI2c2
+                  0x005760                  _LEDs_Led1_init
+                  0x005768                  _LEDs_Led1_state
+                  0x005798                  _LEDs_Led2_init
+                  0x0057a0                  _LEDs_Led2_state
+                  0x0054bc                  _OverflowReset_I2C2
+                  0x00553c                  _Read_I2C2
+                  0x00550c                  _Start_I2C2
+                  0x005006                  _StepperDriver_Motor_goHome
+                  0x005038                  _StepperDriver_Motor_goTo
+                  0x004ecc                  _StepperDriver_Motor_init
+                  0x004f88                  _StepperDriver_Motor_move
+                  0x005662                  _StepperDriver_Motor_onLimitSwitch
+                  0x005098                  _StepperDriver_Motor_poll
+                  0x004ef6                  _StepperDriver_Motor_setMicrostep
+                  0x004f46                  _StepperDriver_Motor_setSpeed
+                  0x004fd2                  _StepperDriver_Motor_sleep
+                  0x00551e                  _Stop_I2C2
+                  0x005530                  _Write_I2C2
                   0x000350                  __DefaultInterrupt
                   0x00032a                  __MI2C2Interrupt
                   0x000304                  __SI2C2Interrupt
@@ -643,72 +643,72 @@ External Symbols in Program Memory (by name):
                   0x0009bc                  _atoi
                   0x000a1c                  _atol
                   0x000a84                  _atoll
-                  0x005744                  _callback
+                  0x0057da                  _callback
                   0x0040e8                  _copysignl
-                  0x004bfe                  _countI2cStreamIn
-                  0x00564a                  _eI2C
-                  0x005616                  _etOut1
+                  0x004c2c                  _countI2cStreamIn
+                  0x005678                  _eI2C
+                  0x005644                  _etOut1
                   0x00411c                  _fabsl
                   0x004132                  _floorl
                   0x00422c                  _fmodl
-                  0x004bea                  _getAvailable_out_count
-                  0x004c06                  _getI2cStreamIn
-                  0x00573a                  _getSystemMilis
-                  0x004d60                  _i2cCloseWriteFrame
-                  0x004da2                  _i2cOpenReadFrame
-                  0x004c34                  _ini_I2C_IN
-                  0x004c5e                  _ini_I2C_OUT
-                  0x004c88                  _ini_I2C_OUT_FM
-                  0x005760                  _initSystem
-                  0x00576e                  _main
+                  0x004c18                  _getAvailable_out_count
+                  0x004c34                  _getI2cStreamIn
+                  0x0057d0                  _getSystemMilis
+                  0x004d8e                  _i2cCloseWriteFrame
+                  0x004dd0                  _i2cOpenReadFrame
+                  0x004c62                  _ini_I2C_IN
+                  0x004c8c                  _ini_I2C_OUT
+                  0x004cb6                  _ini_I2C_OUT_FM
+                  0x0057f6                  _initSystem
+                  0x005804                  _main
                   0x00257e                  _memcpy
                   0x000ae8                  _memset
-                  0x005604                  _onReset
-                  0x0052d4                  _pI2C
-                  0x00530c                  _pI2C_boot
-                  0x0052f0                  _pI2C_ctrl
-                  0x00533a                  _poll_EMICBus
-                  0x004d08                  _pop_I2C_IN
-                  0x004d2c                  _pop_I2C_OUT
-                  0x004d50                  _pop_I2C_OUT_FM
-                  0x004ca0                  _push_I2C_IN
-                  0x004cd8                  _push_I2C_OUT
-                  0x004c92                  _reset_I2C_FRAME
+                  0x005632                  _onReset
+                  0x005302                  _pI2C
+                  0x00533a                  _pI2C_boot
+                  0x00531e                  _pI2C_ctrl
+                  0x005368                  _poll_EMICBus
+                  0x004d36                  _pop_I2C_IN
+                  0x004d5a                  _pop_I2C_OUT
+                  0x004d7e                  _pop_I2C_OUT_FM
+                  0x004cce                  _push_I2C_IN
+                  0x004d06                  _push_I2C_OUT
+                  0x004cc0                  _reset_I2C_FRAME
                   0x004558                  _scalbnf
                   0x0045ac                  _scalbnl
-                  0x0048c2                  _sendDataToStream
-                  0x004c0e                  _setI2cStreamOut
-                  0x005670                  _setTime1
+                  0x0048f0                  _sendDataToStream
+                  0x004c3c                  _setI2cStreamOut
+                  0x005706                  _setTime1
                   0x000bb0                  _snprintf
                   0x0034c4                  _strcpy
-                  0x0052aa                  _streamCloseReadFrame
-                  0x004620                  _streamIn_I2C
-                  0x004882                  _streamIn_t_ptr_to_ascii
-                  0x004664                  _streamIn_t_ptr_to_char
-                  0x004628                  _streamIn_t_ptr_to_float
-                  0x0047ce                  _streamIn_t_ptr_to_int16_t
-                  0x00480a                  _streamIn_t_ptr_to_int32_t
-                  0x004846                  _streamIn_t_ptr_to_int64_t
-                  0x004790                  _streamIn_t_ptr_to_int8_t
-                  0x0046dc                  _streamIn_t_ptr_to_uint16_t
-                  0x004718                  _streamIn_t_ptr_to_uint32_t
-                  0x004754                  _streamIn_t_ptr_to_uint64_t
-                  0x00469e                  _streamIn_t_ptr_to_uint8_t
-                  0x005246                  _streamOpenReadFrame
-                  0x005204                  _streamOpenWriteFrame
-                  0x004624                  _streamOut_I2C
-                  0x0051cc                  _streamPop
-                  0x005192                  _streamPush
-                  0x005144                  _streamPushCtr
-                  0x005292                  _streamReOpenReadFrame
+                  0x0052d8                  _streamCloseReadFrame
+                  0x00464e                  _streamIn_I2C
+                  0x0048b0                  _streamIn_t_ptr_to_ascii
+                  0x004692                  _streamIn_t_ptr_to_char
+                  0x004656                  _streamIn_t_ptr_to_float
+                  0x0047fc                  _streamIn_t_ptr_to_int16_t
+                  0x004838                  _streamIn_t_ptr_to_int32_t
+                  0x004874                  _streamIn_t_ptr_to_int64_t
+                  0x0047be                  _streamIn_t_ptr_to_int8_t
+                  0x00470a                  _streamIn_t_ptr_to_uint16_t
+                  0x004746                  _streamIn_t_ptr_to_uint32_t
+                  0x004782                  _streamIn_t_ptr_to_uint64_t
+                  0x0046cc                  _streamIn_t_ptr_to_uint8_t
+                  0x005274                  _streamOpenReadFrame
+                  0x005232                  _streamOpenWriteFrame
+                  0x004652                  _streamOut_I2C
+                  0x0051fa                  _streamPop
+                  0x0051c0                  _streamPush
+                  0x005172                  _streamPushCtr
+                  0x0052c0                  _streamReOpenReadFrame
                   0x00258c                  _strlen
                   0x000bbc                  _strncmp
                   0x000c44                  _strtod
                   0x000c3e                  _strtof
                   0x000c4a                  _strtold
-                  0x005756                  _systemTimeInit
-                  0x00568c                  _timer1_Poll
-                  0x005786                  _timer4_init
+                  0x0057ec                  _systemTimeInit
+                  0x005722                  _timer1_Poll
+                  0x00581c                  _timer4_init
                   0x0025bc                  _tolower
                   0x0034d2                  _toupper
                   0x001ffe                  _vfprintf
@@ -2184,108 +2184,108 @@ __xc_reference_data
 .config_IESO      0x00abfc          0x2
  .config_IESO     0x00abfc          0x2 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/main.o
 
-.const              0xc60c         0x1c load address 0x00460c  
- .const             0xc60c         0x14 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/userFncFile.o
- .const             0xc620          0x8 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/I2C2_driver.o
-                    0xc620                  _streamIn_I2C
-                    0xc624                  _streamOut_I2C
+.const              0xc60c         0x4a load address 0x00460c  
+ .const             0xc60c         0x42 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/userFncFile.o
+ .const             0xc64e          0x8 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/I2C2_driver.o
+                    0xc64e                  _streamIn_I2C
+                    0xc652                  _streamOut_I2C
 
-.text             0x004628        0xefa
- .text            0x004628        0x5b6 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/streamIn.o
-                  0x004628                  _streamIn_t_ptr_to_float
-                  0x004664                  _streamIn_t_ptr_to_char
-                  0x00469e                  _streamIn_t_ptr_to_uint8_t
-                  0x0046dc                  _streamIn_t_ptr_to_uint16_t
-                  0x004718                  _streamIn_t_ptr_to_uint32_t
-                  0x004754                  _streamIn_t_ptr_to_uint64_t
-                  0x004790                  _streamIn_t_ptr_to_int8_t
-                  0x0047ce                  _streamIn_t_ptr_to_int16_t
-                  0x00480a                  _streamIn_t_ptr_to_int32_t
-                  0x004846                  _streamIn_t_ptr_to_int64_t
-                  0x004882                  _streamIn_t_ptr_to_ascii
-                  0x0048c2                  _sendDataToStream
- .text            0x004bde        0x2c0 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/I2C2_driver.o
-                  0x004bde                  _Init_I2C_Driver
-                  0x004bea                  _getAvailable_out_count
-                  0x004bfe                  _countI2cStreamIn
-                  0x004c06                  _getI2cStreamIn
-                  0x004c0e                  _setI2cStreamOut
-                  0x004c1a                  _I2C_Begin_Transmision
-                  0x004c34                  _ini_I2C_IN
-                  0x004c5e                  _ini_I2C_OUT
-                  0x004c88                  _ini_I2C_OUT_FM
-                  0x004c92                  _reset_I2C_FRAME
-                  0x004ca0                  _push_I2C_IN
-                  0x004cd8                  _push_I2C_OUT
-                  0x004d08                  _pop_I2C_IN
-                  0x004d2c                  _pop_I2C_OUT
-                  0x004d50                  _pop_I2C_OUT_FM
-                  0x004d60                  _i2cCloseWriteFrame
-                  0x004da2                  _i2cOpenReadFrame
-                  0x004dee                  _I2c_driver_callback_slave
-                  0x004e2e                  _I2c_driver_callback_master
- .text            0x004e9e        0x2a6 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/StepperDriver_Motor.o
-                  0x004e9e                  _StepperDriver_Motor_init
-                  0x004ec8                  _StepperDriver_Motor_setMicrostep
-                  0x004f18                  _StepperDriver_Motor_setSpeed
-                  0x004f5a                  _StepperDriver_Motor_move
-                  0x004fa4                  _StepperDriver_Motor_sleep
-                  0x004fd8                  _StepperDriver_Motor_goHome
-                  0x00500a                  _StepperDriver_Motor_goTo
-                  0x00506a                  _StepperDriver_Motor_poll
- .text            0x005144        0x190 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/stream.o
-                  0x005144                  _streamPushCtr
-                  0x005192                  _streamPush
-                  0x0051cc                  _streamPop
-                  0x005204                  _streamOpenWriteFrame
-                  0x005246                  _streamOpenReadFrame
-                  0x005292                  _streamReOpenReadFrame
-                  0x0052aa                  _streamCloseReadFrame
- .text            0x0052d4        0x14a /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/EMICBus.o
-                  0x0052d4                  _pI2C
-                  0x0052f0                  _pI2C_ctrl
-                  0x00530c                  _pI2C_boot
-                  0x00532c                  _EMICBus_init
-                  0x00533a                  _poll_EMICBus
- .text            0x00541e        0x104 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/I2C2.o
-                  0x00541e                  _Init_Master_I2C2
-                  0x005486                  _CollisionReset_I2C2
-                  0x00548e                  _OverflowReset_I2C2
-                  0x005496                  _IsStartI2c2
-                  0x0054a2                  _IsCollisionDetectI2c2
-                  0x0054ae                  _IsStopI2c2
-                  0x0054ba                  _IsReceiveBufferFullI2c2
-                  0x0054c6                  _IsDataOrAddressI2c2
-                  0x0054d2                  _IsReceiveOverflowI2c2
-                  0x0054de                  _Start_I2C2
-                  0x0054f0                  _Stop_I2C2
-                  0x005502                  _Write_I2C2
-                  0x00550e                  _Read_I2C2
+.text             0x004656        0xefa
+ .text            0x004656        0x5b6 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/streamIn.o
+                  0x004656                  _streamIn_t_ptr_to_float
+                  0x004692                  _streamIn_t_ptr_to_char
+                  0x0046cc                  _streamIn_t_ptr_to_uint8_t
+                  0x00470a                  _streamIn_t_ptr_to_uint16_t
+                  0x004746                  _streamIn_t_ptr_to_uint32_t
+                  0x004782                  _streamIn_t_ptr_to_uint64_t
+                  0x0047be                  _streamIn_t_ptr_to_int8_t
+                  0x0047fc                  _streamIn_t_ptr_to_int16_t
+                  0x004838                  _streamIn_t_ptr_to_int32_t
+                  0x004874                  _streamIn_t_ptr_to_int64_t
+                  0x0048b0                  _streamIn_t_ptr_to_ascii
+                  0x0048f0                  _sendDataToStream
+ .text            0x004c0c        0x2c0 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/I2C2_driver.o
+                  0x004c0c                  _Init_I2C_Driver
+                  0x004c18                  _getAvailable_out_count
+                  0x004c2c                  _countI2cStreamIn
+                  0x004c34                  _getI2cStreamIn
+                  0x004c3c                  _setI2cStreamOut
+                  0x004c48                  _I2C_Begin_Transmision
+                  0x004c62                  _ini_I2C_IN
+                  0x004c8c                  _ini_I2C_OUT
+                  0x004cb6                  _ini_I2C_OUT_FM
+                  0x004cc0                  _reset_I2C_FRAME
+                  0x004cce                  _push_I2C_IN
+                  0x004d06                  _push_I2C_OUT
+                  0x004d36                  _pop_I2C_IN
+                  0x004d5a                  _pop_I2C_OUT
+                  0x004d7e                  _pop_I2C_OUT_FM
+                  0x004d8e                  _i2cCloseWriteFrame
+                  0x004dd0                  _i2cOpenReadFrame
+                  0x004e1c                  _I2c_driver_callback_slave
+                  0x004e5c                  _I2c_driver_callback_master
+ .text            0x004ecc        0x2a6 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/StepperDriver_Motor.o
+                  0x004ecc                  _StepperDriver_Motor_init
+                  0x004ef6                  _StepperDriver_Motor_setMicrostep
+                  0x004f46                  _StepperDriver_Motor_setSpeed
+                  0x004f88                  _StepperDriver_Motor_move
+                  0x004fd2                  _StepperDriver_Motor_sleep
+                  0x005006                  _StepperDriver_Motor_goHome
+                  0x005038                  _StepperDriver_Motor_goTo
+                  0x005098                  _StepperDriver_Motor_poll
+ .text            0x005172        0x190 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/stream.o
+                  0x005172                  _streamPushCtr
+                  0x0051c0                  _streamPush
+                  0x0051fa                  _streamPop
+                  0x005232                  _streamOpenWriteFrame
+                  0x005274                  _streamOpenReadFrame
+                  0x0052c0                  _streamReOpenReadFrame
+                  0x0052d8                  _streamCloseReadFrame
+ .text            0x005302        0x14a /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/EMICBus.o
+                  0x005302                  _pI2C
+                  0x00531e                  _pI2C_ctrl
+                  0x00533a                  _pI2C_boot
+                  0x00535a                  _EMICBus_init
+                  0x005368                  _poll_EMICBus
+ .text            0x00544c        0x104 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/I2C2.o
+                  0x00544c                  _Init_Master_I2C2
+                  0x0054b4                  _CollisionReset_I2C2
+                  0x0054bc                  _OverflowReset_I2C2
+                  0x0054c4                  _IsStartI2c2
+                  0x0054d0                  _IsCollisionDetectI2c2
+                  0x0054dc                  _IsStopI2c2
+                  0x0054e8                  _IsReceiveBufferFullI2c2
+                  0x0054f4                  _IsDataOrAddressI2c2
+                  0x005500                  _IsReceiveOverflowI2c2
+                  0x00550c                  _Start_I2C2
+                  0x00551e                  _Stop_I2C2
+                  0x005530                  _Write_I2C2
+                  0x00553c                  _Read_I2C2
 
-.dinit            0x005522         0xe2
- .dinit           0x005522         0xe2 data_init
+.dinit            0x005550         0xe2
+ .dinit           0x005550         0xe2 data_init
 
-.text             0x005604        0x198
- .text            0x005604         0x6c /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/userFncFile.o
-                  0x005604                  _onReset
-                  0x005616                  _etOut1
-                  0x005634                  _StepperDriver_Motor_onLimitSwitch
-                  0x00564a                  _eI2C
- .text            0x005670         0x5a /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/timer_api1.o
-                  0x005670                  _setTime1
-                  0x00568c                  _timer1_Poll
- .text            0x0056ca         0x38 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/led_Led1.o
-                  0x0056ca                  _LEDs_Led1_init
-                  0x0056d2                  _LEDs_Led1_state
- .text            0x005702         0x38 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/led_Led2.o
-                  0x005702                  _LEDs_Led2_init
-                  0x00570a                  _LEDs_Led2_state
- .text            0x00573a         0x26 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/systemTimer.o
-                  0x00573a                  _getSystemMilis
-                  0x005744                  _callback
-                  0x005756                  _systemTimeInit
- .text            0x005760         0x26 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/main.o
-                  0x005760                  _initSystem
-                  0x00576e                  _main
- .text            0x005786         0x16 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/timer.o
-                  0x005786                  _timer4_init
+.text             0x005632        0x200
+ .text            0x005632         0xd4 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/userFncFile.o
+                  0x005632                  _onReset
+                  0x005644                  _etOut1
+                  0x005662                  _StepperDriver_Motor_onLimitSwitch
+                  0x005678                  _eI2C
+ .text            0x005706         0x5a /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/timer_api1.o
+                  0x005706                  _setTime1
+                  0x005722                  _timer1_Poll
+ .text            0x005760         0x38 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/led_Led1.o
+                  0x005760                  _LEDs_Led1_init
+                  0x005768                  _LEDs_Led1_state
+ .text            0x005798         0x38 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/led_Led2.o
+                  0x005798                  _LEDs_Led2_init
+                  0x0057a0                  _LEDs_Led2_state
+ .text            0x0057d0         0x26 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/systemTimer.o
+                  0x0057d0                  _getSystemMilis
+                  0x0057da                  _callback
+                  0x0057ec                  _systemTimeInit
+ .text            0x0057f6         0x26 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/main.o
+                  0x0057f6                  _initSystem
+                  0x005804                  _main
+ .text            0x00581c         0x16 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/timer.o
+                  0x00581c                  _timer4_init
