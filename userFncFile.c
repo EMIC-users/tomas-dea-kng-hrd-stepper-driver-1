@@ -13,10 +13,18 @@
 
 void onReset()
 {
-    StepperDriver_Motor_setMicrostep(8);
-    StepperDriver_Motor_setSpeed(300);
-    StepperDriver_Motor_goHome(0);
     LEDs_Led1_state(1);
+    setTime1(1500, 'T');
+}
+
+
+void etOut1()
+{
+    StepperDriver_Motor_sleep(0);
+    StepperDriver_Motor_setMicrostep(8);
+    StepperDriver_Motor_setSpeed(400);
+    pI2C("INIT\t1");
+    StepperDriver_Motor_goHome(0);
 }
 
 

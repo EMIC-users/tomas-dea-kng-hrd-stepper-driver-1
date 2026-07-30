@@ -24,6 +24,7 @@ int main(void)
 	onReset();
 	do
 	{
+		timer1_Poll();
 		StepperDriver_Motor_poll();
 		poll_EMICBus();
 	}
