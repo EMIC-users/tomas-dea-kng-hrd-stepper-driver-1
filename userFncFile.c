@@ -41,19 +41,19 @@ void eI2C(char* tag, const streamIn_t* const msg)
 {
     if (strncmp(tag, "ABRIR", 5) == 0)
     {
-        paso = streamIn_t_ptr_to_uint16_t((streamIn_t*)msg * 1);
+        paso = streamIn_t_ptr_to_uint16_t((streamIn_t*)msg);
         pI2C("ECOA\t%u", paso);
         StepperDriver_Motor_move(1, paso);
     }
     else if (strncmp(tag, "CERRAR", 6) == 0)
     {
-        paso = streamIn_t_ptr_to_uint16_t((streamIn_t*)msg * 1);
+        paso = streamIn_t_ptr_to_uint16_t((streamIn_t*)msg);
         pI2C("ECOC\t%u", paso);
         StepperDriver_Motor_move(0, paso);
     }
     else if (strncmp(tag, "PASO", 4) == 0)
     {
-        paso = streamIn_t_ptr_to_uint16_t((streamIn_t*)msg * 1);
+        paso = streamIn_t_ptr_to_uint16_t((streamIn_t*)msg);
         pI2C("ECOP\t%u", paso);
         StepperDriver_Motor_goTo(paso);
     }
