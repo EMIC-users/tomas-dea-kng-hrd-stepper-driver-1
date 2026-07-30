@@ -30,7 +30,6 @@ void StepperDriver_Motor_move(uint8_t direction, uint16_t steps);
 void StepperDriver_Motor_sleep(uint8_t state);
 
 
-void StepperDriver_Motor_goTo(uint32_t position);
 
 /*==================[events]================================================*/
 

@@ -84,24 +84,10 @@ void poll_EMICBus(void)
 		switch(d)
 		{
 			case tipoTrama_mensaje:;
-				if (i2c2InStream.data_count_sal > 0)
-				{
-					char tag[20];
-					char d;
-					uint8_t i = 0;
-					d = pop_I2C_IN();
-					while (i2c2InStream.data_count_sal && d != '\t' && i < 20)
-					{
-						tag[i++] = d;
-						d = pop_I2C_IN();
-					}
-					tag[i] = 0;
-					eI2C(tag, &streamIn_I2C);
-					while(i2c2InStream.data_count_sal)
-					{
-						pop_I2C_IN();
-					}		
-				}
+			while (i2c2InStream.data_count_sal)
+			{
+				pop_I2C_IN();
+			}
 				break;
 			case tipoTrama_control:;
 			if (i2c2InStream.data_count_sal > 0)
