@@ -49,7 +49,7 @@ void eI2C(char* tag, const streamIn_t* const msg)
         {
             pct = 100;
         }
-        pasos = /* unsupported parameter type: emic-math-mult */;
+        pasos = pct * 8;
         pI2C("PAPOS\t%u", pct);
         StepperDriver_Motor_goTo(pasos);
     }
