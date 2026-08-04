@@ -245,11 +245,11 @@ section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200              0x440c          0x6612  (26130)
 .const                      0x460c                0x60            0x90  (144)
-.text                       0x466c               0xfe2          0x17d3  (6099)
-.dinit                      0x564e                0xe8           0x15c  (348)
-.text                       0x5736               0x12c           0x1c2  (450)
+.text                       0x466c               0xefa          0x1677  (5751)
+.dinit                      0x5566                0xe8           0x15c  (348)
+.text                       0x564e               0x20e           0x315  (789)
 
-                 Total "program" memory used (bytes):         0x8193  (33171) 50%
+                 Total "program" memory used (bytes):         0x818a  (33162) 50%
 
 
 "data" Memory  [Origin = 0x800, Length = 0x2000]
@@ -495,22 +495,22 @@ External Symbols in Program Memory (by address):
                   0x005534                  _Stop_I2C2
                   0x005546                  _Write_I2C2
                   0x005552                  _Read_I2C2
-                  0x005566                  _onReset
-                  0x005580                  _etOut1
-                  0x00559a                  _StepperDriver_Motor_onLimitSwitch
-                  0x0055ac                  _eI2C
-                  0x005736                  _setTime1
-                  0x005752                  _timer1_Poll
-                  0x005790                  _LEDs_Led1_init
-                  0x005798                  _LEDs_Led1_state
-                  0x0057c8                  _LEDs_Led2_init
-                  0x0057d0                  _LEDs_Led2_state
-                  0x005800                  _getSystemMilis
-                  0x00580a                  _callback
-                  0x00581c                  _systemTimeInit
-                  0x005826                  _initSystem
-                  0x005834                  _main
-                  0x00584c                  _timer4_init
+                  0x00564e                  _onReset
+                  0x005668                  _etOut1
+                  0x005686                  _StepperDriver_Motor_onLimitSwitch
+                  0x005698                  _eI2C
+                  0x005730                  _setTime1
+                  0x00574c                  _timer1_Poll
+                  0x00578a                  _LEDs_Led1_init
+                  0x005792                  _LEDs_Led1_state
+                  0x0057c2                  _LEDs_Led2_init
+                  0x0057ca                  _LEDs_Led2_state
+                  0x0057fa                  _getSystemMilis
+                  0x005804                  _callback
+                  0x005816                  _systemTimeInit
+                  0x005820                  _initSystem
+                  0x00582e                  _main
+                  0x005846                  _timer4_init
 
 External Symbols in Program Memory (by name):
 
@@ -527,10 +527,10 @@ External Symbols in Program Memory (by name):
                   0x005516                  _IsReceiveOverflowI2c2
                   0x0054da                  _IsStartI2c2
                   0x0054f2                  _IsStopI2c2
-                  0x005790                  _LEDs_Led1_init
-                  0x005798                  _LEDs_Led1_state
-                  0x0057c8                  _LEDs_Led2_init
-                  0x0057d0                  _LEDs_Led2_state
+                  0x00578a                  _LEDs_Led1_init
+                  0x005792                  _LEDs_Led1_state
+                  0x0057c2                  _LEDs_Led2_init
+                  0x0057ca                  _LEDs_Led2_state
                   0x0054d2                  _OverflowReset_I2C2
                   0x005552                  _Read_I2C2
                   0x005522                  _Start_I2C2
@@ -538,7 +538,7 @@ External Symbols in Program Memory (by name):
                   0x00504e                  _StepperDriver_Motor_goTo
                   0x004ee2                  _StepperDriver_Motor_init
                   0x004f9e                  _StepperDriver_Motor_move
-                  0x00559a                  _StepperDriver_Motor_onLimitSwitch
+                  0x005686                  _StepperDriver_Motor_onLimitSwitch
                   0x0050ae                  _StepperDriver_Motor_poll
                   0x004f0c                  _StepperDriver_Motor_setMicrostep
                   0x004f5c                  _StepperDriver_Motor_setSpeed
@@ -647,27 +647,27 @@ External Symbols in Program Memory (by name):
                   0x0009bc                  _atoi
                   0x000a1c                  _atol
                   0x000a84                  _atoll
-                  0x00580a                  _callback
+                  0x005804                  _callback
                   0x0040e8                  _copysignl
                   0x004c42                  _countI2cStreamIn
-                  0x0055ac                  _eI2C
-                  0x005580                  _etOut1
+                  0x005698                  _eI2C
+                  0x005668                  _etOut1
                   0x00411c                  _fabsl
                   0x004132                  _floorl
                   0x00422c                  _fmodl
                   0x004c2e                  _getAvailable_out_count
                   0x004c4a                  _getI2cStreamIn
-                  0x005800                  _getSystemMilis
+                  0x0057fa                  _getSystemMilis
                   0x004da4                  _i2cCloseWriteFrame
                   0x004de6                  _i2cOpenReadFrame
                   0x004c78                  _ini_I2C_IN
                   0x004ca2                  _ini_I2C_OUT
                   0x004ccc                  _ini_I2C_OUT_FM
-                  0x005826                  _initSystem
-                  0x005834                  _main
+                  0x005820                  _initSystem
+                  0x00582e                  _main
                   0x00257e                  _memcpy
                   0x000ae8                  _memset
-                  0x005566                  _onReset
+                  0x00564e                  _onReset
                   0x005318                  _pI2C
                   0x005350                  _pI2C_boot
                   0x005334                  _pI2C_ctrl
@@ -682,7 +682,7 @@ External Symbols in Program Memory (by name):
                   0x0045ac                  _scalbnl
                   0x004906                  _sendDataToStream
                   0x004c52                  _setI2cStreamOut
-                  0x005736                  _setTime1
+                  0x005730                  _setTime1
                   0x000bb0                  _snprintf
                   0x0034c4                  _strcpy
                   0x0052ee                  _streamCloseReadFrame
@@ -710,9 +710,9 @@ External Symbols in Program Memory (by name):
                   0x000c44                  _strtod
                   0x000c3e                  _strtof
                   0x000c4a                  _strtold
-                  0x00581c                  _systemTimeInit
-                  0x005752                  _timer1_Poll
-                  0x00584c                  _timer4_init
+                  0x005816                  _systemTimeInit
+                  0x00574c                  _timer1_Poll
+                  0x005846                  _timer4_init
                   0x0025bc                  _tolower
                   0x0034d2                  _toupper
                   0x001ffe                  _vfprintf
@@ -2197,7 +2197,7 @@ __xc_reference_data
                     0xc664                  _streamIn_I2C
                     0xc668                  _streamOut_I2C
 
-.text             0x00466c        0xfe2
+.text             0x00466c        0xefa
  .text            0x00466c        0x5b6 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/streamIn.o
                   0x00466c                  _streamIn_t_ptr_to_float
                   0x0046a8                  _streamIn_t_ptr_to_char
@@ -2268,31 +2268,31 @@ __xc_reference_data
                   0x005534                  _Stop_I2C2
                   0x005546                  _Write_I2C2
                   0x005552                  _Read_I2C2
- .text            0x005566         0xe8 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/userFncFile.o
-                  0x005566                  _onReset
-                  0x005580                  _etOut1
-                  0x00559a                  _StepperDriver_Motor_onLimitSwitch
-                  0x0055ac                  _eI2C
 
-.dinit            0x00564e         0xe8
- .dinit           0x00564e         0xe8 data_init
+.dinit            0x005566         0xe8
+ .dinit           0x005566         0xe8 data_init
 
-.text             0x005736        0x12c
- .text            0x005736         0x5a /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/timer_api1.o
-                  0x005736                  _setTime1
-                  0x005752                  _timer1_Poll
- .text            0x005790         0x38 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/led_Led1.o
-                  0x005790                  _LEDs_Led1_init
-                  0x005798                  _LEDs_Led1_state
- .text            0x0057c8         0x38 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/led_Led2.o
-                  0x0057c8                  _LEDs_Led2_init
-                  0x0057d0                  _LEDs_Led2_state
- .text            0x005800         0x26 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/systemTimer.o
-                  0x005800                  _getSystemMilis
-                  0x00580a                  _callback
-                  0x00581c                  _systemTimeInit
- .text            0x005826         0x26 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/main.o
-                  0x005826                  _initSystem
-                  0x005834                  _main
- .text            0x00584c         0x16 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/timer.o
-                  0x00584c                  _timer4_init
+.text             0x00564e        0x20e
+ .text            0x00564e         0xe2 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/userFncFile.o
+                  0x00564e                  _onReset
+                  0x005668                  _etOut1
+                  0x005686                  _StepperDriver_Motor_onLimitSwitch
+                  0x005698                  _eI2C
+ .text            0x005730         0x5a /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/timer_api1.o
+                  0x005730                  _setTime1
+                  0x00574c                  _timer1_Poll
+ .text            0x00578a         0x38 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/led_Led1.o
+                  0x00578a                  _LEDs_Led1_init
+                  0x005792                  _LEDs_Led1_state
+ .text            0x0057c2         0x38 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/led_Led2.o
+                  0x0057c2                  _LEDs_Led2_init
+                  0x0057ca                  _LEDs_Led2_state
+ .text            0x0057fa         0x26 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/systemTimer.o
+                  0x0057fa                  _getSystemMilis
+                  0x005804                  _callback
+                  0x005816                  _systemTimeInit
+ .text            0x005820         0x26 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/main.o
+                  0x005820                  _initSystem
+                  0x00582e                  _main
+ .text            0x005846         0x16 /root/Dropbox/EMIC/TARGETS/tomas.eze.caceres__gmail.com/DEA-KNG/HRD_STEPPER_DRIVER_1/build/default/production/timer.o
+                  0x005846                  _timer4_init
