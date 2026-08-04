@@ -25,11 +25,12 @@ void StepperDriver_Motor_setMicrostep(uint8_t microsteps);
 
 void StepperDriver_Motor_setSpeed(uint16_t stepsPerSecond);
 
-void StepperDriver_Motor_move(uint8_t direction, uint16_t steps);
 
 void StepperDriver_Motor_sleep(uint8_t state);
 
+void StepperDriver_Motor_goHome(uint8_t direction);
 
+void StepperDriver_Motor_goTo(uint32_t position);
 
 /*==================[events]================================================*/
 

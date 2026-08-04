@@ -15,7 +15,6 @@
 void onReset();
 void etOut1();
 void StepperDriver_Motor_onLimitSwitch();
-void eI2C(char* tag, const streamIn_t* const msg);
 
 #endif /* USERFNCFILE_H */
 
