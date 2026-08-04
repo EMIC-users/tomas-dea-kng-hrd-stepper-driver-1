@@ -14,6 +14,7 @@
 /* User Variables */
 uint16_t pct = 0;
 uint16_t pasos = 0;
+uint8_t cfg = 0;
 
 void onReset()
 {
@@ -25,10 +26,18 @@ void onReset()
 
 void etOut1()
 {
-    StepperDriver_Motor_sleep(0);
-    StepperDriver_Motor_setMicrostep(8);
-    StepperDriver_Motor_setSpeed(50);
-    StepperDriver_Motor_goHome(0);
+    if (cfg == 0)
+    {
+        StepperDriver_Motor_sleep(0);
+        StepperDriver_Motor_setMicrostep(8);
+        StepperDriver_Motor_setSpeed(50);
+        cfg = 1;
+        StepperDriver_Motor_goHome(0);
+    }
+    else
+    {
+        pI2C("PAPOS\t%u", pct);
+    }
 }
 
 
@@ -36,7 +45,9 @@ void StepperDriver_Motor_onLimitSwitch()
 {
     StepperDriver_Motor_goTo(300);
     LEDs_Led2_state(1);
+    pct = 37;
     pI2C("PAHOME\t1");
+    setTime1(2000, 'A');
 }
 
 
@@ -50,7 +61,6 @@ void eI2C(char* tag, const streamIn_t* const msg)
             pct = 100;
         }
         pasos = pct * 8;
-        pI2C("PAPOS\t%u", pct);
         StepperDriver_Motor_goTo(pasos);
     }
     else
