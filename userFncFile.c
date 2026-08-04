@@ -15,6 +15,14 @@
 uint16_t pct = 0;
 uint16_t pasos = 0;
 uint8_t cfg = 0;
+uint8_t estado = 0;
+uint16_t rpmRef = 600;
+uint16_t banda = 50;
+uint16_t acc = 0;
+uint8_t n = 0;
+uint16_t prom = 0;
+uint16_t lim1 = 0;
+uint16_t lim2 = 0;
 
 void onReset()
 {
@@ -62,6 +70,57 @@ void eI2C(char* tag, const streamIn_t* const msg)
         }
         pasos = pct * 8;
         StepperDriver_Motor_goTo(pasos);
+    }
+    else if (strncmp(tag, "ESTADO", 6) == 0)
+    {
+        estado = streamIn_t_ptr_to_uint8_t((streamIn_t*)msg);
+    }
+    else if (strncmp(tag, "RPMREF", 6) == 0)
+    {
+        rpmRef = streamIn_t_ptr_to_uint16_t((streamIn_t*)msg);
+    }
+    else if (strncmp(tag, "RPMBAND", 7) == 0)
+    {
+        banda = streamIn_t_ptr_to_uint16_t((streamIn_t*)msg);
+    }
+    else if (strncmp(tag, "RPMMOTOR", 8) == 0)
+    {
+        if (estado == 2)
+        {
+            acc = acc + streamIn_t_ptr_to_uint16_t((streamIn_t*)msg);
+            n = (uint8_t)(n + 1);
+            if (n >= 5)
+            {
+                prom = acc / 5;
+                acc = 0;
+                n = 0;
+                lim1 = rpmRef - banda;
+                lim2 = rpmRef + banda;
+                if (prom < lim1)
+                {
+                    pct = pct + 1;
+                    if (pct > 100)
+                    {
+                        pct = 100;
+                    }
+                    pasos = pct * 8;
+                    StepperDriver_Motor_goTo(pasos);
+                }
+                if (prom > lim2)
+                {
+                    if (pct > 1)
+                    {
+                        pct = pct - 1;
+                    }
+                    else
+                    {
+                        pct = 1;
+                    }
+                    pasos = pct * 8;
+                    StepperDriver_Motor_goTo(pasos);
+                }
+            }
+        }
     }
     else
     {
