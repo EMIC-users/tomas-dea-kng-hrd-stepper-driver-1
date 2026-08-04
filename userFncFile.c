@@ -11,6 +11,10 @@
 #include "inc/conversionFunctions.h"
 #include "inc/EMICBus.h"
 
+/* User Variables */
+uint16_t pct = 0;
+uint16_t pasos = 0;
+
 void onReset()
 {
     LEDs_Led1_state(1);
@@ -25,7 +29,6 @@ void etOut1()
     StepperDriver_Motor_setMicrostep(8);
     StepperDriver_Motor_setSpeed(50);
     StepperDriver_Motor_goHome(0);
-    pI2C("PAGOHOME\t1");
 }
 
 
@@ -34,6 +37,26 @@ void StepperDriver_Motor_onLimitSwitch()
     StepperDriver_Motor_goTo(300);
     LEDs_Led2_state(1);
     pI2C("PAHOME\t1");
+}
+
+
+void eI2C(char* tag, const streamIn_t* const msg)
+{
+    if (strncmp(tag, "PAREF", 5) == 0)
+    {
+        pct = streamIn_t_ptr_to_uint16_t((streamIn_t*)msg);
+        if (pct > 100)
+        {
+            pct = 100;
+        }
+        pasos = /* unsupported parameter type: emic-math-mult */;
+        pI2C("PAPOS\t%u", pct);
+        StepperDriver_Motor_goTo(pasos);
+    }
+    else
+    {
+        /* default case - no action */
+    }
 }
 
 
