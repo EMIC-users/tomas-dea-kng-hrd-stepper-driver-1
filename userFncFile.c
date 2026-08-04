@@ -25,6 +25,7 @@ uint8_t n = 0;
 uint16_t prom = 0;
 uint16_t lim1 = 0;
 uint16_t lim2 = 0;
+uint8_t homed = 0;
 
 void onReset()
 {
@@ -53,11 +54,15 @@ void etOut1()
 
 void StepperDriver_Motor_onLimitSwitch()
 {
-    StepperDriver_Motor_goTo(300);
-    LEDs_Led2_state(1);
-    pos = 300;
-    pI2C("PAHOME\t1");
-    setTime1(2000, 'A');
+    if (homed == 0)
+    {
+        homed = 1;
+        pos = 300;
+        setTime1(2000, 'A');
+        LEDs_Led2_state(1);
+        pI2C("PAHOME\t1");
+        StepperDriver_Motor_goTo(300);
+    }
 }
 
 
