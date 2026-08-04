@@ -26,6 +26,7 @@ uint16_t prom = 0;
 uint16_t lim1 = 0;
 uint16_t lim2 = 0;
 uint8_t homed = 0;
+uint8_t ubicado = 0;
 
 void onReset()
 {
@@ -48,6 +49,11 @@ void etOut1()
     else
     {
         pI2C("PAPOS\t%u", pos);
+        if (ubicado == 0)
+        {
+            ubicado = 1;
+            StepperDriver_Motor_goTo(300);
+        }
     }
 }
 
@@ -58,10 +64,9 @@ void StepperDriver_Motor_onLimitSwitch()
     {
         homed = 1;
         pos = 300;
-        setTime1(2000, 'A');
-        LEDs_Led2_state(1);
         pI2C("PAHOME\t1");
-        StepperDriver_Motor_goTo(300);
+        LEDs_Led2_state(1);
+        setTime1(2000, 'A');
     }
 }
 
