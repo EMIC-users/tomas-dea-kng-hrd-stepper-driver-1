@@ -23,6 +23,7 @@ uint8_t n = 0;
 uint16_t prom = 0;
 uint16_t lim1 = 0;
 uint16_t lim2 = 0;
+uint8_t lazo = 1;
 
 void onReset()
 {
@@ -83,41 +84,48 @@ void eI2C(char* tag, const streamIn_t* const msg)
     {
         banda = streamIn_t_ptr_to_uint16_t((streamIn_t*)msg);
     }
+    else if (strncmp(tag, "LAZO", 4) == 0)
+    {
+        lazo = streamIn_t_ptr_to_uint8_t((streamIn_t*)msg);
+    }
     else if (strncmp(tag, "RPMMOTOR", 8) == 0)
     {
         if (estado == 2)
         {
-            acc = acc + streamIn_t_ptr_to_uint16_t((streamIn_t*)msg);
-            n = (uint8_t)(n + 1);
-            if (n >= 5)
+            if (lazo == 1)
             {
-                prom = acc / 5;
-                acc = 0;
-                n = 0;
-                lim1 = rpmRef - banda;
-                lim2 = rpmRef + banda;
-                if (prom < lim1)
+                acc = acc + streamIn_t_ptr_to_uint16_t((streamIn_t*)msg);
+                n = (uint8_t)(n + 1);
+                if (n >= 5)
                 {
-                    pct = pct + 1;
-                    if (pct > 100)
+                    prom = acc / 5;
+                    acc = 0;
+                    n = 0;
+                    lim1 = rpmRef - banda;
+                    lim2 = rpmRef + banda;
+                    if (prom < lim1)
                     {
-                        pct = 100;
+                        pct = pct + 1;
+                        if (pct > 100)
+                        {
+                            pct = 100;
+                        }
+                        pasos = pct * 8;
+                        StepperDriver_Motor_goTo(pasos);
                     }
-                    pasos = pct * 8;
-                    StepperDriver_Motor_goTo(pasos);
-                }
-                if (prom > lim2)
-                {
-                    if (pct > 1)
+                    if (prom > lim2)
                     {
-                        pct = pct - 1;
+                        if (pct > 1)
+                        {
+                            pct = pct - 1;
+                        }
+                        else
+                        {
+                            pct = 1;
+                        }
+                        pasos = pct * 8;
+                        StepperDriver_Motor_goTo(pasos);
                     }
-                    else
-                    {
-                        pct = 1;
-                    }
-                    pasos = pct * 8;
-                    StepperDriver_Motor_goTo(pasos);
                 }
             }
         }
