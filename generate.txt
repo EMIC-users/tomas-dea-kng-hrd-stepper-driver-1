@@ -65,6 +65,8 @@
 
 
 
+//------------------- EMIC bus device ID (myId.h, consumido por I2C_driver) ----------------
+
 
 
 

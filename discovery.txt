@@ -3,6 +3,12 @@
 
 //------------------- Process EMIC-Generate files result ----------------
 
+// Functions:
+
+
+// Events:
+
+
 //------------------- APIs -----------------------
 
 
@@ -76,11 +82,9 @@
 
 
 
-//EMIC:setOutput(TARGET:conversionFunctions.c)
-	//EMIC:setInput(src/conversionFunctions.c)
-//EMIC:restoreOutput
 
-//EMIC:define(c_modules.conversionFunctions,conversionFunctions.c)
+
+
 
 
 
