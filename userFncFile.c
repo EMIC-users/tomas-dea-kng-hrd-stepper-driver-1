@@ -41,7 +41,7 @@ void etOut1()
         StepperDriver_Motor_setMicrostep(8);
         StepperDriver_Motor_setSpeed(50);
         cfg = 1;
-        StepperDriver_Motor_goHome(0);
+        StepperDriver_Motor_goHome(1);
     }
     else
     {
