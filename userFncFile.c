@@ -53,9 +53,10 @@ void etOut1()
 
 void StepperDriver_Motor_onLimitSwitch()
 {
-    StepperDriver_Motor_goTo(300);
+    pct = 80;
+    pasos = pct * 4;
+    StepperDriver_Motor_goTo(pasos);
     LEDs_Led2_state(1);
-    pct = 37;
     pI2C("PAHOME\t1");
     setTime1(2000, 'A');
 }
@@ -70,7 +71,7 @@ void eI2C(char* tag, const streamIn_t* const msg)
         {
             pct = 100;
         }
-        pasos = pct * 8;
+        pasos = pct * 4;
         StepperDriver_Motor_goTo(pasos);
     }
     else if (strncmp(tag, "ESTADO", 6) == 0)
@@ -111,7 +112,7 @@ void eI2C(char* tag, const streamIn_t* const msg)
                         {
                             pct = 100;
                         }
-                        pasos = pct * 8;
+                        pasos = pct * 4;
                         StepperDriver_Motor_goTo(pasos);
                     }
                     if (prom > lim2)
@@ -124,7 +125,7 @@ void eI2C(char* tag, const streamIn_t* const msg)
                         {
                             pct = 1;
                         }
-                        pasos = pct * 8;
+                        pasos = pct * 4;
                         StepperDriver_Motor_goTo(pasos);
                     }
                 }
