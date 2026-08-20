@@ -28,7 +28,6 @@ uint8_t lazo = 1;
 void onReset()
 {
     LEDs_Led1_state(1);
-    pI2C("PABOOT\t12");
     setTime1(1500, 'T');
 }
 
@@ -37,6 +36,7 @@ void etOut1()
 {
     if (cfg == 0)
     {
+        pI2C("PABOOT\t1");
         StepperDriver_Motor_sleep(0);
         StepperDriver_Motor_setMicrostep(8);
         StepperDriver_Motor_setSpeed(50);
