@@ -46,7 +46,6 @@ void etOut1()
     else
     {
         pI2C("PAPOS\t%u", pct);
-        pI2C("RPMREF\t%u", rpmRef);
     }
 }
 
