@@ -28,7 +28,7 @@ uint8_t lazo = 1;
 void onReset()
 {
     LEDs_Led1_state(1);
-    pI2C("PABOOT\t1");
+    pI2C("PABOOT\t12");
     setTime1(1500, 'T');
 }
 
